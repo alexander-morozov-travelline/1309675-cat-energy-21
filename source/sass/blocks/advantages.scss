@@ -1,0 +1,34 @@
+.advantages {
+  padding: 0 20px;
+}
+
+.advantages__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages__header-image {
+  width: 60px;
+  height: 60px;
+}
+
+.advantages__title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+
+  color: #000000;
+}
+
+.advantages__text {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+}
