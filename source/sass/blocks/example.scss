@@ -1,6 +1,13 @@
+$exampleBg: #eaeaea;
+
 .example {
-  background: #eaeaea;
+  background-color: $exampleBg;
+  margin-top: 42px;
   padding: 27px 21px 25px 20px;
+}
+
+.example__title {
+  margin-bottom: 33px;
 }
 
 .example__text {
@@ -10,4 +17,64 @@
   font-size: 14px;
   line-height: 18px;
   color: #444444;
+}
+
+.example__data {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.example__data-item {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.example__data-value {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+  width: 124px;
+  height: 56px;
+  border: 1px solid #cdcdcd;
+  border-radius: 5px;
+  padding: 13px;
+}
+
+.example__data-text {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #444444;
+  max-width: 87px;
+  padding: 0 10px;
+  position: absolute;
+  bottom: -15px;
+  left: 18px;
+  background-color: $exampleBg;
+}
+
+.example__cost {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  margin-top: 20px;
 }

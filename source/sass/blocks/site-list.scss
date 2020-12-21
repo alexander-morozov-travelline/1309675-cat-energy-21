@@ -3,3 +3,21 @@
   margin: 0;
   padding: 0;
 }
+
+.site-list__item {
+  padding: 22px 20px 24px;
+  width: 100%;
+  border-top: 1px solid #e6e6e6;
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.site-list__item-link {
+  text-decoration: none;
+  color: #000000;
+}

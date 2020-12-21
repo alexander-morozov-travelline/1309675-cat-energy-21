@@ -1,3 +1,9 @@
+.progress {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 22px;
+}
+
 .progress__list {
   list-style-type: none;
   margin: 0;
@@ -5,6 +11,7 @@
 }
 
 .progress__item {
+  margin-top: 20px;
   padding: 21px 20px 18px 20px;
   background: #f2f2f2;
 
@@ -13,19 +20,15 @@
   }
 }
 
+.progress__header {
+  display: flex;
+  flex-direction: row;
+}
+
 .progress__header-image {
   width: 67px;
   height: 50px;
-}
-
-.progress__title {
-  font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 37px;
-  text-transform: uppercase;
-  color: #000000;
+  margin-right: 19px;
 }
 
 .progress__text {
@@ -35,4 +38,29 @@
   font-size: 14px;
   line-height: 18px;
   color: #444444;
+  margin-top: 22px;
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 20px;
+}
+
+.progress__link {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+  display: inline-block;
+  margin-top: 19px;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    margin-left: 15px;
+    width: 24px;
+    height: 12px;
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='12' viewBox='0 0 24 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline y1='6' x2='18' y2='6' stroke='black' stroke-width='2'/%3E%3Cpath d='M24 6L17.25 11.1962L17.25 0.803848L24 6Z' fill='black'/%3E%3C/svg%3E%0A");
+  }
 }

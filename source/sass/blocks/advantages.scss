@@ -1,4 +1,5 @@
 .advantages {
+  margin-top: 25px;
   padding: 0 20px;
 }
 
@@ -8,20 +9,20 @@
   padding: 0;
 }
 
-.advantages__header-image {
+.advantages__item {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.advantages__image {
   width: 60px;
   height: 60px;
+  margin-right: 21px;
 }
 
 .advantages__title {
-  font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 37px;
-  text-transform: uppercase;
-
-  color: #000000;
+  margin-bottom: 38px;
 }
 
 .advantages__text {
@@ -31,4 +32,6 @@
   font-size: 14px;
   line-height: 18px;
   color: #444444;
+  display: inline-block;
+  margin-top: 3px;
 }

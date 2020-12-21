@@ -1,0 +1,16 @@
+.visually-hidden {
+  position: absolute;
+  visibility: hidden;
+  pointer-events: none;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  text-indent: -9999px;
+  white-space: nowrap;
+  overflow: hidden;
+  user-select: none;
+}
