@@ -1,3 +1,6 @@
+$cooperationTextColor: #111111;
+$cooperationAddressColor: #444444;
+
 .cooperation {
   display: flex;
   flex-direction: row;
@@ -5,20 +8,19 @@
 }
 
 .cooperation__text {
-  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  color: #111111;
+  color: $cooperationTextColor;
 }
 
 .cooperation__address {
-  font-family: "Arial", sans-serif;
+  font-family: $additionalFont;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
-  color: #444444;
+  color: $cooperationAddressColor;
 }

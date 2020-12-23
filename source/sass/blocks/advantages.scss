@@ -1,12 +1,12 @@
+$advantagesTextColor: #444444;
+
 .advantages {
   margin-top: 25px;
   padding: 0 20px;
 }
 
 .advantages__list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+  @include reset-list();
 }
 
 .advantages__item {
@@ -26,12 +26,12 @@
 }
 
 .advantages__text {
-  font-family: "Arial", sans-serif;
+  font-family: $additionalFont;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
-  color: #444444;
+  color: $advantagesTextColor;
   display: inline-block;
   margin-top: 3px;
 }

@@ -1,4 +1,7 @@
 $exampleBg: #eaeaea;
+$exampleTextColor: #444444;
+$exampleDataValueColor: #000000;
+$exampleBorderColor: #cdcdcd;
 
 .example {
   background-color: $exampleBg;
@@ -11,12 +14,12 @@ $exampleBg: #eaeaea;
 }
 
 .example__text {
-  font-family: "Arial", sans-serif;
+  font-family: $additionalFont;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
-  color: #444444;
+  color: $exampleTextColor;
 }
 
 .example__data {
@@ -35,22 +38,22 @@ $exampleBg: #eaeaea;
 }
 
 .example__data-value {
-  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
   line-height: 24px;
   text-align: center;
-  color: #000000;
+  color: $exampleDataValueColor;
   width: 124px;
   height: 56px;
-  border: 1px solid #cdcdcd;
+  border: 1px solid $exampleBorderColor;
   border-radius: 5px;
   padding: 13px;
+  box-sizing: border-box;
 }
 
 .example__data-text {
-  font-family: "Arial", sans-serif;
+  font-family: $additionalFont;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -58,23 +61,23 @@ $exampleBg: #eaeaea;
   display: flex;
   align-items: center;
   text-align: center;
-  color: #444444;
+  color: $exampleTextColor;
   max-width: 87px;
   padding: 0 10px;
   position: absolute;
   bottom: -15px;
   left: 18px;
   background-color: $exampleBg;
+  box-sizing: border-box;
 }
 
 .example__cost {
-  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
-  color: #000000;
+  color: $exampleDataValueColor;
   margin-top: 20px;
 }

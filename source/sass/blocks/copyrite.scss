@@ -1,3 +1,5 @@
+$copyriteTextColor: #444444;
+
 .copyrite {
   display: flex;
   flex-direction: row;
@@ -5,12 +7,12 @@
 }
 
 .copyrite__text {
-  font-family: "Arial", sans-serif;
+  font-family: $additionalFont;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
-  color: #444444;
+  color: $copyriteTextColor;
 }
 
 .copyrite__logo-image {

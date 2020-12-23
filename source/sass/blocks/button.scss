@@ -1,9 +1,11 @@
+$buttonBgColor: #68b738;
+$buttonColor: #ffffff;
+
 .button {
   width: 100%;
-  background-color: #68b738;
-  color: #ffffff;
+  background-color: $buttonBgColor;
+  color: $buttonColor;
   padding: 10px 44px;
-  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;

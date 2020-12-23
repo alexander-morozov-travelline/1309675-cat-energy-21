@@ -1,9 +1,12 @@
+$footerBg: #f2f2f2;
+$footerCooperationBg: #ffffff;
+
 .page-footer {
-  background: #f2f2f2;
+  background: $footerBg;
 }
 
 .page-footer__cooperation {
-  background-color: #ffffff;
+  background-color: $footerCooperationBg;
   padding: 28px 19px 22px;
 }
 

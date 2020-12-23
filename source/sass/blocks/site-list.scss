@@ -1,14 +1,11 @@
 .site__list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+  @include reset-list;
 }
 
 .site-list__item {
   padding: 22px 20px 24px;
   width: 100%;
   border-top: 1px solid #e6e6e6;
-  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
