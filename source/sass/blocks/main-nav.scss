@@ -1,0 +1,11 @@
+.main-nav__toggle {
+  display: none;
+
+  &--active {
+    display: flex;
+  }
+}
+
+.main-nav__list {
+  @include reset-list;
+}

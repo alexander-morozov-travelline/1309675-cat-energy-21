@@ -1,0 +1,37 @@
+$advantagesTextColor: #444444;
+
+.advantages {
+  margin-top: 25px;
+  padding: 0 20px;
+}
+
+.advantages__list {
+  @include reset-list();
+}
+
+.advantages__item {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.advantages__image {
+  width: 60px;
+  height: 60px;
+  margin-right: 21px;
+}
+
+.advantages__title {
+  margin-bottom: 38px;
+}
+
+.advantages__text {
+  font-family: $additionalFont;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: $advantagesTextColor;
+  display: inline-block;
+  margin-top: 3px;
+}

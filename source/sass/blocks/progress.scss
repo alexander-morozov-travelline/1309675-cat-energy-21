@@ -1,0 +1,75 @@
+$progressItemBgColor: #f2f2f2;
+$progressTextColor: #444444;
+$progressTextBorderColor: #d9d9d9;
+$progressLinkColor: #000000;
+
+.progress {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 22px;
+}
+
+.progress__list {
+  @include reset-list;
+}
+
+.progress__item {
+  margin-top: 20px;
+  padding: 21px 20px 18px 20px;
+  background-color: $progressItemBgColor;
+
+  &:not(:first-child) {
+    margin-top: 20px;
+  }
+}
+
+.progress__header {
+  display: flex;
+  flex-direction: row;
+}
+
+.progress__header-image {
+  width: 67px;
+  height: 50px;
+  margin-right: 19px;
+}
+
+.progress__title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 37px;
+}
+
+.progress__text {
+  font-family: $additionalFont;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: $progressTextColor;
+  margin-top: 22px;
+  border-bottom: 1px solid $progressTextBorderColor;
+  padding-bottom: 20px;
+}
+
+.progress__link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $progressLinkColor;
+  display: inline-block;
+  margin-top: 19px;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    margin-left: 15px;
+    width: 24px;
+    height: 12px;
+    background-image: url("../img/right-arrow.svg");
+  }
+}

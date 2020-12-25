@@ -1,0 +1,83 @@
+$exampleBg: #eaeaea;
+$exampleTextColor: #444444;
+$exampleDataValueColor: #000000;
+$exampleBorderColor: #cdcdcd;
+
+.example {
+  background-color: $exampleBg;
+  margin-top: 42px;
+  padding: 27px 21px 25px 20px;
+}
+
+.example__title {
+  margin-bottom: 33px;
+}
+
+.example__text {
+  font-family: $additionalFont;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: $exampleTextColor;
+}
+
+.example__data {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.example__data-item {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.example__data-value {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: $exampleDataValueColor;
+  width: 124px;
+  height: 56px;
+  border: 1px solid $exampleBorderColor;
+  border-radius: 5px;
+  padding: 13px;
+  box-sizing: border-box;
+}
+
+.example__data-text {
+  font-family: $additionalFont;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: $exampleTextColor;
+  max-width: 87px;
+  padding: 0 10px;
+  position: absolute;
+  bottom: -15px;
+  left: 18px;
+  background-color: $exampleBg;
+  box-sizing: border-box;
+}
+
+.example__cost {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $exampleDataValueColor;
+  margin-top: 20px;
+}

@@ -1,0 +1,21 @@
+$copyriteTextColor: #444444;
+
+.copyrite {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.copyrite__text {
+  font-family: $additionalFont;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: $copyriteTextColor;
+}
+
+.copyrite__logo-image {
+  width: 27px;
+  height: 34px;
+}

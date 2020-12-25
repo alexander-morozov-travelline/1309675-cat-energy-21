@@ -1,0 +1,16 @@
+$mainFont: "Oswald", "Helvetica", sans-serif;
+$additionalFont: "Arial", "Geneva", sans-serif;
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: $mainFont;
+}
+
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

@@ -1,0 +1,17 @@
+$buttonBgColor: #68b738;
+$buttonColor: #ffffff;
+
+.button {
+  width: 100%;
+  background-color: $buttonBgColor;
+  color: $buttonColor;
+  padding: 10px 44px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
