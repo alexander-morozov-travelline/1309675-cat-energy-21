@@ -9,12 +9,6 @@
   flex-direction: column;
 }
 
-.checkbox__item {
-  &:not(:first-child) {
-    margin-top: 12px;
-  }
-}
-
 .checkbox__item-input {
   position: absolute;
   z-index: -1;
@@ -26,6 +20,10 @@
   display: inline-flex;
   align-items: center;
   user-select: none;
+
+  &:not(:first-child) {
+    margin-top: 12px;
+  }
 
   &::before {
     content: "";
