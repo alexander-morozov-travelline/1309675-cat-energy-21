@@ -1,10 +1,5 @@
-$exampleBg: #eaeaea;
-$exampleTextColor: #444444;
-$exampleDataValueColor: #000000;
-$exampleBorderColor: #cdcdcd;
-
 .example {
-  background-color: $exampleBg;
+  background-color: $smokyWhite;
   margin-top: 42px;
   padding: 27px 21px 25px 20px;
 }
@@ -19,7 +14,7 @@ $exampleBorderColor: #cdcdcd;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
-  color: $exampleTextColor;
+  color: $darkGrey;
 }
 
 .example__data {
@@ -43,10 +38,10 @@ $exampleBorderColor: #cdcdcd;
   font-size: 24px;
   line-height: 24px;
   text-align: center;
-  color: $exampleDataValueColor;
+  color: $black;
   width: 124px;
   height: 56px;
-  border: 1px solid $exampleBorderColor;
+  border: 1px solid $lightTelegrey;
   border-radius: 5px;
   padding: 13px;
   box-sizing: border-box;
@@ -61,13 +56,13 @@ $exampleBorderColor: #cdcdcd;
   display: flex;
   align-items: center;
   text-align: center;
-  color: $exampleTextColor;
+  color: $darkGrey;
   max-width: 87px;
   padding: 0 10px;
   position: absolute;
   bottom: -15px;
   left: 18px;
-  background-color: $exampleBg;
+  background-color: $smokyWhite;
   box-sizing: border-box;
 }
 
@@ -78,6 +73,6 @@ $exampleBorderColor: #cdcdcd;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
-  color: $exampleDataValueColor;
+  color: $black;
   margin-top: 20px;
 }
