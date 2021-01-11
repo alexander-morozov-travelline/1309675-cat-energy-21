@@ -1,8 +1,3 @@
-$progressItemBgColor: #f2f2f2;
-$progressTextColor: #444444;
-$progressTextBorderColor: #d9d9d9;
-$progressLinkColor: #000000;
-
 .progress {
   padding-left: 20px;
   padding-right: 20px;
@@ -16,7 +11,7 @@ $progressLinkColor: #000000;
 .progress__item {
   margin-top: 20px;
   padding: 21px 20px 18px 20px;
-  background-color: $progressItemBgColor;
+  background-color: $smokyWhiteLight;
 
   &:not(:first-child) {
     margin-top: 20px;
@@ -47,9 +42,9 @@ $progressLinkColor: #000000;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
-  color: $progressTextColor;
+  color: $darkGrey;
   margin-top: 22px;
-  border-bottom: 1px solid $progressTextBorderColor;
+  border-bottom: 1px solid $grey;
   padding-bottom: 20px;
 }
 
@@ -60,7 +55,7 @@ $progressLinkColor: #000000;
   line-height: 16px;
   text-transform: uppercase;
   text-decoration: none;
-  color: $progressLinkColor;
+  color: $black;
   display: inline-block;
   margin-top: 19px;
 
