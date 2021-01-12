@@ -1,0 +1,28 @@
+.present {
+  margin: 39px 20px;
+  padding: 58px 20px 26px 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-image: url("../img/present-bg.jpg");
+}
+
+.present__icon {
+  width: 78px;
+  height: 80px;
+  align-self: center;
+  background-image: url("../img/icon-gift.svg");
+}
+
+.present__text {
+  font-family: $additionalFont;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  align-items: center;
+  text-align: center;
+  color: $white;
+  margin-top: 49px;
+}
