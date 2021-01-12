@@ -14,9 +14,7 @@
 }
 
 .radio__item-input {
-  position: absolute;
-  z-index: -1;
-  opacity: 0;
+  display: none;
 }
 
 .radio__text {
