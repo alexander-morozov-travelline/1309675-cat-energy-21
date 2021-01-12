@@ -3,3 +3,23 @@
   padding: 0;
   list-style: none;
 }
+
+@mixin title-green-line {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 26px;
+  color: $black;
+  display: flex;
+
+  &::after {
+    content: "";
+    flex-grow: 1;
+    border: 1px solid #68b738;
+    margin-left: 22px;
+    height: 2px;
+    align-self: center;
+    box-sizing: border-box;
+    margin-top: 7px;
+  }
+}
