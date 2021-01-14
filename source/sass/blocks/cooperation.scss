@@ -11,6 +11,11 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $almostBlack;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 21px;
+  }
 }
 
 .cooperation__address {
@@ -20,4 +25,9 @@
   font-size: 14px;
   line-height: 20px;
   color: $darkGrey;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }

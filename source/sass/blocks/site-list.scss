@@ -46,9 +46,23 @@
       }
     }
   }
+
+  &--index {
+    @media (min-width: $desktop) {
+      &::before {
+        border-color: $white;
+      }
+    }
+  }
 }
 
 .site-list__item-link {
   text-decoration: none;
-  color: #000000;
+  color: $black;
+
+  &--index {
+    @media (min-width: $desktop) {
+      color: $white;
+    }
+  }
 }

@@ -1,5 +1,5 @@
 .advantages {
-  margin-top: 25px;
+  margin-top: 26px;
   padding: 0 20px;
 }
 
@@ -10,7 +10,7 @@
 .advantages__item {
   display: flex;
   flex-direction: row;
-  margin-top: 20px;
+  margin-top: 9px;
 }
 
 .advantages__image {
@@ -20,7 +20,13 @@
 }
 
 .advantages__title {
+  margin-top: 0;
   margin-bottom: 38px;
+
+  @media (min-width: $tablet) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .advantages__text {
@@ -32,4 +38,9 @@
   color: $darkGrey;
   display: inline-block;
   margin-top: 3px;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
