@@ -2,11 +2,32 @@
   background-color: $smokyWhite;
   margin-top: 32px;
   padding: 26px 20px 25px 20px;
+
+  @media (min-width: $tablet) {
+    background-color: $white;
+  }
+
+  @media (min-width: $desktop) {
+    background-color: $smokyWhite;
+    padding: 0 103px 0 110px;
+  }
 }
 
 .example__title {
   margin-top: 0;
   margin-bottom: 33px;
+
+  @media (min-width: $tablet) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: -110px;
+    padding: 10px 103px 77px 110px;
+    width: 100vw;
+    background: $white;
+  }
 }
 
 .example__text {
@@ -20,6 +41,33 @@
   @media (min-width: $tablet) {
     font-size: 16px;
     line-height: 24px;
+    margin-top: 65px;
+  }
+}
+
+.example__wrap {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.example__data-wrap {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 13px;
+  }
+
+  @media (min-width: $desktop) {
+    flex-direction: column;
   }
 }
 
@@ -53,8 +101,11 @@
   box-sizing: border-box;
 
   @media (min-width: $tablet) {
+    width: 162px;
+    height: 71px;
     font-size: 30px;
     line-height: 37px;
+    margin-right: 42px;
   }
 }
 
@@ -79,6 +130,26 @@
   @media (min-width: $tablet) {
     font-size: 14px;
     line-height: 14px;
+    background-color: $white;
+    max-width: 150px;
+    bottom: -5px;
+  }
+
+  @media (min-width: $desktop) {
+    background-color: $smokyWhite;
+  }
+
+  &--weight {
+    @media (min-width: $tablet) {
+      padding: 0 9px 0 14px;
+    }
+  }
+
+  &--time {
+    @media (min-width: $tablet) {
+      padding: 0 9px 0 8px;
+      margin-left: -9px;
+    }
   }
 }
 
@@ -95,5 +166,24 @@
   @media (min-width: $tablet) {
     font-size: 20px;
     line-height: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin: 35px 21px 0 0;
+  }
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.example__cost-value {
+  @media (min-width: $tablet) {
+    margin-top: 10px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 0;
   }
 }

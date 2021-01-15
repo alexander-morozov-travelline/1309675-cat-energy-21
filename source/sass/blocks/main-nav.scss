@@ -7,13 +7,15 @@
 
   &--index {
     &::before {
-      position: absolute;
-      background-image: url("../img/menu-bg.jpg");
-      content: "";
-      top: 0;
-      right: 0;
-      width: 720px;
-      height: 694px;
+      @media (min-width: 1330px) {
+        position: absolute;
+        background-image: url("../img/menu-bg.jpg");
+        content: "";
+        top: 0;
+        right: 0;
+        width: 720px;
+        height: 694px;
+      }
     }
   }
 }

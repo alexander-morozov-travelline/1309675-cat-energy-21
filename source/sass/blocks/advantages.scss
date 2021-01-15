@@ -1,16 +1,39 @@
 .advantages {
   margin-top: 26px;
   padding: 0 20px;
+
+  @media (min-width: $tablet) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0 106px 0 110px;
+  }
 }
 
 .advantages__list {
   @include reset-list();
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .advantages__item {
   display: flex;
   flex-direction: row;
   margin-top: 9px;
+
+  @media (min-width: $tablet) {
+    flex-direction: column;
+    width: 50%;
+  }
+
+  @media (min-width: $desktop) {
+    width: 25%;
+  }
 }
 
 .advantages__image {
