@@ -26,5 +26,10 @@
     height: 2px;
     box-sizing: border-box;
     top: 16px;
+
+    @media (min-width: $tablet) {
+      top: 22px;
+      left: -51px;
+    }
   }
 }

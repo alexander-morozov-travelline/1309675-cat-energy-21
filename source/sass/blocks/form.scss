@@ -1,5 +1,13 @@
 .form {
   padding: 24px 20px 20px 20px;
+
+  @media (min-width: $tablet) {
+    padding: 107px 67px 33px 71px;
+  }
+
+  @media (min-width: $tablet) {
+    padding: 41px 67px 33px 71px;
+  }
 }
 
 .form__text {
@@ -12,33 +20,65 @@
   margin-top: 14px;
   margin-bottom: 39px;
   padding-right: 25px;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 350px;
+    margin-bottom: 65px;
+  }
 }
 
 .form__label {
   position: relative;
   display: flex;
   margin-top: 14px;
+
+  @media (min-width: $tablet) {
+    margin-top: 20px;
+  }
 }
 
 .form__input-text {
   align-self: center;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form__input {
   margin-left: 13px;
   flex-grow: 1;
 
+  @media (min-width: $tablet) {
+    margin-left: 16px;
+  }
+
   &--age {
     margin-left: 16px;
+
+    @media (min-width: $tablet) {
+      margin-left: 18px;
+    }
   }
 
   &--weight {
     margin-left: 15px;
+
+    @media (min-width: $tablet) {
+      margin-left: 20px;
+    }
   }
 }
 
 .form__radio {
   margin: 22px -20px 2px -20px;
+
+  @media (min-width: $tablet) {
+    margin: 72px 0 51px 0;
+  }
 }
 
 .form__title {
@@ -47,17 +87,39 @@
   margin-top: 23px;
   margin-right: -20px;
 
+  @media (min-width: $tablet) {
+    font-size: 36px;
+    line-height: 36px;
+    padding-left: 40px;
+    padding-right: 43px;
+    margin-left: -42px;
+  }
+
   &--contact {
     margin-bottom: 21px;
     max-width: 202px;
+
+    @media (min-width: $tablet) {
+      max-width: 100%;
+      margin-bottom: 55px;
+    }
   }
 
   &--comment {
     margin-bottom: 39px;
+
+    @media (min-width: $tablet) {
+      margin-top: 66px;
+      margin-bottom: 76px;
+    }
   }
 
   &--additional {
     margin-top: 18px;
+
+    @media (min-width: $tablet) {
+      margin-top: 59px;
+    }
   }
 }
 
@@ -70,10 +132,25 @@
   padding: 0;
   margin-left: 0;
   margin-top: 14px;
+
+  @media (min-width: $tablet) {
+    margin-top: 21px;
+  }
+}
+
+.form__footer {
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .form__button {
   margin-top: 35px;
+
+  @media (min-width: $tablet) {
+    max-width: 282px;
+  }
 }
 
 .form__notice {
