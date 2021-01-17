@@ -22,13 +22,25 @@
   display: inline-flex;
   align-items: center;
   user-select: none;
+  margin-bottom: 12px;
 
   @media (min-width: $tablet) {
-    width: 50%;
+    min-width: 221px;
+    margin-bottom: 32px;
+
+    &:nth-child(2n + 1) {
+      margin-right: 123px;
+    }
   }
 
-  &:not(:first-child) {
-    margin-top: 12px;
+  @media (min-width: $desktop) {
+    &:nth-child(n) {
+      margin-right: 104px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
   &::before {

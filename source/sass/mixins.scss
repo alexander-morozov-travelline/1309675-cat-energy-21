@@ -31,5 +31,10 @@
       top: 22px;
       left: -51px;
     }
+
+    @media (min-width: $tablet) {
+      top: 22px;
+      left: -91px;
+    }
   }
 }

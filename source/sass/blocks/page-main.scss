@@ -1,9 +1,11 @@
 .page-main__title {
-  margin: 27px 20px 0 20px;
+  margin-top: 22px;
+  margin-bottom: 37px;
 
   @media (min-width: $tablet) {
     font-size: 60px;
     line-height: 60px;
-    margin: 30px 30px 0 68px;
+    margin-top: 25px;
+    margin-bottom: 55px;
   }
 }
