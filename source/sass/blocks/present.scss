@@ -1,16 +1,50 @@
 .present {
-  margin: 39px 20px;
-  padding: 58px 20px 26px 20px;
+  margin-top: 39px;
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet) {
+    margin-top: 82px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: 79px;
+    margin-top: 0;
+  }
+}
+
+.present__wrap {
   position: relative;
   display: flex;
   flex-direction: column;
   text-align: center;
   background-image: url("../img/present-bg.jpg");
+  padding-top: 58px;
+  padding-right: 20px;
+  padding-bottom: 26px;
+  padding-left: 20px;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 37px;
+    padding-right: 124px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+  }
+
+  @media (min-width: $desktop) {
+    flex-direction: column;
+    padding-left: 40px;
+    padding-right: 42px;
+    padding-top: 57px;
+    padding-bottom: 25px;
+  }
 }
 
 .present__icon {
   width: 78px;
   height: 80px;
+  display: inline-block;
   align-self: center;
   background-image: url("../img/icon-gift.svg");
 }
@@ -27,4 +61,14 @@
   margin-top: 49px;
   max-width: 161px;
   align-self: center;
+
+  @media (min-width: $tablet) {
+    text-align: left;
+    margin-top: 37px;
+  }
+
+  @media (min-width: $desktop) {
+    text-align: center;
+    margin-top: 50px;
+  }
 }

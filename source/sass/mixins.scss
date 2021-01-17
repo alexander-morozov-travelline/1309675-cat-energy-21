@@ -9,10 +9,25 @@
   font-weight: normal;
   font-size: 24px;
   line-height: 26px;
+  margin-right: -20px;
+  padding-left: 20px;
   color: $black;
   background: $white;
   position: relative;
   display: inline-block;
+
+  @media (min-width: $tablet) {
+    font-size: 36px;
+    line-height: 36px;
+    padding-right: 36px;
+    margin-left: 32px;
+    padding-left: 36px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: 71px;
+    padding-left: 40px;
+  }
 }
 
 @mixin green-line {
@@ -29,10 +44,10 @@
 
     @media (min-width: $tablet) {
       top: 22px;
-      left: -51px;
+      left: -54px;
     }
 
-    @media (min-width: $tablet) {
+    @media (min-width: $desktop) {
       top: 22px;
       left: -91px;
     }

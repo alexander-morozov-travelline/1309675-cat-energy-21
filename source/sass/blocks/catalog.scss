@@ -1,32 +1,91 @@
 .catalog {
-  margin-top: 40px;
+  margin-top: 27px;
+
+  @media (min-width: $desktop) {
+    margin-top: 60px;
+  }
 }
 
 .catalog__list {
   @include reset-list;
+  margin-top: 40px;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: -30px;
+    margin-right: -30px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: -40px;
+    margin-right: -40px;
+  }
 }
 
 .catalog__item {
   border-top: 1px solid $smokyWhite2;
-  padding: 0 20px;
+
+  @media (min-width: $tablet) {
+    box-sizing: border-box;
+    border-top: none;
+    width: 324px;
+    margin-left: 30px;
+    margin-right: 30px;
+    background: linear-gradient($white 0%, $white 81px, $smokyWhiteLight 82px, $smokyWhiteLight 100%);
+    padding-left: 36px;
+    padding-right: 36px;
+    padding-bottom: 40px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 245px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
 
   &:last-child {
     padding-bottom: 24px;
     border-bottom: 1px solid $smokyWhite2;
+
+    @media (min-width: $tablet) {
+      border: none;
+    }
   }
 
   &:not(:first-child) {
     margin-top: 24px;
+
+    @media (min-width: $tablet) {
+      margin-top: 0;
+    }
+  }
+
+  &--more {
+    background: $white;
+    padding-top: 57px;
+    padding-left: 0;
+    padding-right: 0;
+    border: none;
   }
 }
 
 .catalog__more {
-  padding: 0 20px;
   margin-top: 25px;
   display: flex;
   text-align: center;
   justify-content: center;
   flex-direction: column;
+
+  @media (min-width: $tablet) {
+    border: 2px solid $smokyWhiteLight;
+    padding-top: 50px;
+    padding-left: 36px;
+    padding-right: 36px;
+    padding-bottom: 38px;
+  }
 }
 
 .catalog_plus {
@@ -35,6 +94,11 @@
   height: 30px;
   display: flex;
   position: relative;
+
+  @media (min-width: $tablet) {
+    width: 60px;
+    height: 60px;
+  }
 
   &::before {
     content: "";
@@ -73,6 +137,14 @@
   color: $almostBlack;
   margin-top: 23px;
   margin-bottom: 0;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 22px;
+    margin-top: 50px;
+    max-width: 135px;
+    align-self: center;
+  }
 }
 
 .catalog__more-text {
@@ -84,6 +156,14 @@
   text-align: center;
   color: $darkGrey;
   margin-top: 7px;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 18px;
+    max-width: 169px;
+    align-self: center;
+    margin-top: 23px;
+  }
 }
 
 .catalog__button-all {
@@ -99,4 +179,8 @@
   box-sizing: border-box;
   width: 100%;
   margin-top: 10px;
+
+  @media (min-width: $tablet) {
+    margin-top: 70px;
+  }
 }

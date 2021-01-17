@@ -120,8 +120,6 @@
   @include title();
   @include green-line();
   margin-top: 23px;
-  margin-right: -20px;
-  padding-left: 20px;
 
   @media (min-width: $tablet) {
     font-size: 36px;
