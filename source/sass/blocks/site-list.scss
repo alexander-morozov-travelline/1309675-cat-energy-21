@@ -4,8 +4,12 @@
 
 .site-list__item {
   box-sizing: border-box;
-  padding: 22px 20px 24px;
+  padding-top: 22px;
+  padding-right: 20px;
+  padding-bottom: 23px;
+  padding-left: 20px;
   width: 100%;
+  text-align: center;
   border-top: 1px solid #e6e6e6;
   font-style: normal;
   font-weight: 500;
@@ -23,7 +27,7 @@
     display: inline;
     position: relative;
     padding: 0;
-    margin: 0 0 0 32px;
+    margin-left: 30px;
   }
 
   @media (min-width: $desktop) {
@@ -31,7 +35,7 @@
     font-weight: normal;
     font-size: 20px;
     line-height: 30px;
-    margin: 0 0 0 30px;
+    margin-left: 32px;
   }
 
   &--active {
@@ -41,8 +45,8 @@
         content: "";
         bottom: -9px;
         width: calc(100% - 4px);
+        transform: translateX(-2px);
         border-bottom: 2px solid #68b738;
-        left: 1px;
       }
     }
   }
