@@ -1,15 +1,20 @@
 .example {
   background-color: $smokyWhite;
   margin-top: 32px;
-  padding: 26px 20px 25px 20px;
+  padding-top: 26px;
+  padding-bottom: 25px;
 
   @media (min-width: $tablet) {
     background-color: $white;
+    margin-top: 43px;
+    padding-top: 43px;
+    border-top: 1px solid $smokyWhite2;
   }
 
   @media (min-width: $desktop) {
-    background-color: $smokyWhite;
-    padding: 0 103px 0 110px;
+    border: none;
+    margin-top: 20px;
+    background: linear-gradient($white 0%, $white 179px, $smokyWhite 180px, $smokyWhite 100%);
   }
 }
 
@@ -21,12 +26,28 @@
     font-size: 60px;
     line-height: 60px;
   }
+}
 
+.example__title-wrap {
   @media (min-width: $desktop) {
-    margin-left: -110px;
     padding: 10px 103px 77px 110px;
-    width: 100vw;
     background: $white;
+  }
+}
+
+.example__wrap {
+  @media (min-width: $desktop) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.example__content {
+  &--left {
+    @media (min-width: $desktop) {
+      max-width: 436px;
+    }
   }
 }
 
@@ -37,33 +58,43 @@
   font-size: 14px;
   line-height: 18px;
   color: $darkGrey;
+  margin: 0;
 
   @media (min-width: $tablet) {
     font-size: 16px;
     line-height: 24px;
-    margin-top: 65px;
+    margin-top: 63px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 115px;
   }
 }
 
-.example__wrap {
+.example__info {
   display: flex;
   flex-direction: column;
 
-  @media (min-width: $desktop) {
+  @media (min-width: $tablet) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
+
+  @media (min-width: $desktop) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
-.example__data-wrap {
+.example__data-content {
   display: flex;
   flex-direction: column;
 
   @media (min-width: $tablet) {
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 13px;
+    padding-top: 28px;
   }
 
   @media (min-width: $desktop) {
@@ -74,8 +105,15 @@
 .example__data {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   margin-top: 25px;
+
+  @media (min-width: $tablet) {
+    margin-top: 53px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 69px;
+  }
 }
 
 .example__data-item {
@@ -169,12 +207,14 @@
     display: flex;
     flex-direction: column;
     text-align: right;
-    margin: 35px 21px 0 0;
+    margin-top: 64px;
   }
 
-  @media (min-width: $tablet) {
+  @media (min-width: $desktop) {
     flex-direction: row;
     justify-content: space-between;
+    max-width: 326px;
+    margin-top: 45px;
   }
 }
 
