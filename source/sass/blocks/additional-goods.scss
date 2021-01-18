@@ -4,7 +4,8 @@
 }
 
 .additional-goods__title {
-  @include title-green-line();
+  @include title();
+  @include green-line();
   margin-right: -20px;
   margin-bottom: 34px;
 }
@@ -14,12 +15,12 @@
 }
 
 .additional-goods__item {
-  border-top: 1px solid #ebebeb;
-  padding: 3px 0 0 1px;
+  border-top: 1px solid $smokyWhite2;
+  padding: 4px 0 0 1px;
 
   &:last-child {
     padding-bottom: 17px;
-    border-bottom: 1px solid #ebebeb;
+    border-bottom: 1px solid $smokyWhite2;
   }
 
   &:not(:first-child) {
@@ -48,7 +49,7 @@
   line-height: 14px;
   text-align: center;
   color: $darkGrey;
-  margin-top: 14px;
+  margin-top: 13px;
   display: flex;
   justify-content: space-between;
 }

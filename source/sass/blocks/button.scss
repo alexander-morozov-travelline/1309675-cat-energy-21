@@ -13,4 +13,15 @@
   text-transform: uppercase;
   text-decoration: none;
   justify-content: center;
+
+  &--program {
+    font-size: 14px;
+    line-height: 18px;
+
+    @media (min-width: $tablet) {
+      padding: 17px 20px;
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
 }

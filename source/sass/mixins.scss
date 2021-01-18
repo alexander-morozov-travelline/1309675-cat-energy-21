@@ -4,22 +4,27 @@
   list-style: none;
 }
 
-@mixin title-green-line {
+@mixin title {
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
   line-height: 26px;
   color: $black;
-  display: flex;
+  background: $white;
+  position: relative;
+  display: inline-block;
+}
 
+@mixin green-line {
   &::after {
+    position: absolute;
+    width: 100vw;
     content: "";
-    flex-grow: 1;
+    z-index: -1;
     border: 1px solid #68b738;
     margin-left: 22px;
     height: 2px;
-    align-self: center;
     box-sizing: border-box;
-    margin-top: 7px;
+    top: 16px;
   }
 }

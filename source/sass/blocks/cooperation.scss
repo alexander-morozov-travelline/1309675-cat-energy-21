@@ -8,9 +8,15 @@
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 20px;
   text-transform: uppercase;
   color: $almostBlack;
+  min-width: 140px;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 21px;
+  }
 }
 
 .cooperation__address {
@@ -20,4 +26,9 @@
   font-size: 14px;
   line-height: 20px;
   color: $darkGrey;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }

@@ -1,20 +1,98 @@
 .promo {
   font-style: normal;
   font-weight: normal;
-  padding-left: 20px;
-  padding-right: 20px;
+
+  @media (min-width: $desktop) {
+    max-width: 875px;
+    padding-top: 65px;
+    padding-bottom: 185px;
+  }
+}
+
+.promo__content {
+  margin-left: -20px;
+  margin-right: -20px;
+  padding: 28px 20px 150px 20px;
+
+  @media (max-width: $mobileOnly) {
+    background-image: url("../img/promo-bg.jpg");
+  }
+
+  @media (min-width: $tablet) {
+    padding-bottom: 0;
+  }
+}
+
+.promo__footer {
+  position: relative;
+  margin-top: -136px;
+
+  @media (min-width: $tablet) {
+    margin-top: 19px;
+  }
+}
+
+.promo__button {
+  @media (min-width: $tablet) {
+    position: absolute;
+    max-width: 244px;
+    top: 29px;
+    left: 83px;
+  }
+
+  @media (min-width: $desktop) {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-top: 51px;
+    margin-left: 80px;
+  }
+}
+
+.promo__image {
+  @media (min-width: $desktop) {
+    position: absolute;
+    bottom: -130px;
+    right: -347px;
+  }
 }
 
 .promo__title {
+  font-style: normal;
+  font-weight: normal;
   font-size: 36px;
   line-height: 36px;
   text-align: center;
-  color: #ffffff;
+  color: $white;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  @media (min-width: $tablet) {
+    margin-left: 80px;
+    padding: 1px 65px 0 0;
+    color: black;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+  }
 }
 
 .promo__text {
+  font-style: normal;
+  font-weight: normal;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
-  color: #ffffff;
+  color: $white;
+  text-align: center;
+  margin-top: 25px;
+
+  @media (min-width: $tablet) {
+    color: $black;
+    text-align: left;
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 42px;
+    margin-left: 80px;
+  }
 }

@@ -1,11 +1,42 @@
-.main-nav__toggle {
-  display: none;
+.main-nav {
+  @media (max-width: $mobileOnly) {
+    margin-top: 10px;
+  }
 
-  &--active {
-    display: flex;
+  @media (min-width: $tablet) {
+    padding-right: 32px;
+  }
+
+  &--close {
+    @media (max-width: $mobileOnly) {
+      display: none;
+    }
+  }
+
+  &--index {
+    &::before {
+      @media (min-width: 1330px) {
+        position: absolute;
+        background-image: url("../img/menu-bg.jpg");
+        content: "";
+        top: 0;
+        right: 0;
+        width: 720px;
+        height: 694px;
+      }
+    }
   }
 }
 
 .main-nav__list {
   @include reset-list;
+
+  @media (min-width: $tablet) {
+    text-align: right;
+    padding: 18px 0 0 0;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 16px 0 0 0;
+  }
 }
