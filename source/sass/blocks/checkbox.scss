@@ -6,6 +6,11 @@
   border: none;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .checkbox__item-input {
@@ -17,9 +22,25 @@
   display: inline-flex;
   align-items: center;
   user-select: none;
+  margin-bottom: 12px;
 
-  &:not(:first-child) {
-    margin-top: 12px;
+  @media (min-width: $tablet) {
+    min-width: 221px;
+    margin-bottom: 32px;
+
+    &:nth-child(2n + 1) {
+      margin-right: 123px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    &:nth-child(n) {
+      margin-right: 104px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
   &::before {
@@ -32,6 +53,12 @@
     border: 1px solid #cdcdcd;
     box-sizing: border-box;
     margin-right: 15px;
+
+    @media (min-width: $tablet) {
+      margin-right: 18px;
+      width: 40px;
+      height: 40px;
+    }
   }
 }
 
@@ -47,4 +74,9 @@
   flex-grow: 0;
   border-radius: 50%;
   background-image: url("../img/check.svg");
+
+  @media (min-width: $tablet) {
+    left: 10px;
+    top: 19px;
+  }
 }

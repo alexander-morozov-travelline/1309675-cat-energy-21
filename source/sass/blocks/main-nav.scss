@@ -7,6 +7,10 @@
     padding-right: 32px;
   }
 
+  @media (min-width: $desktop) {
+    padding-right: 110px;
+  }
+
   &--close {
     @media (max-width: $mobileOnly) {
       display: none;

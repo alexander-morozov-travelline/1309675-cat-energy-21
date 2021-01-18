@@ -10,13 +10,19 @@
   padding-left: 20px;
   width: 100%;
   text-align: center;
-  border-top: 1px solid #e6e6e6;
+  border-top: 1px solid $smokyWhite3;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
   color: #000000;
+
+  &:last-child {
+    @media (max-width: $mobileOnly) {
+      border-bottom: 1px solid $smokyWhite3;
+    }
+  }
 
   @media (min-width: $tablet) {
     border-top: none;

@@ -15,4 +15,16 @@
   &--white {
     background-color: $white;
   }
+
+  &--form {
+    @media (min-width: $tablet) {
+      padding-left: 70px;
+      padding-right: 67px;
+    }
+
+    @media (min-width: $desktop) {
+      padding-left: 110px;
+      padding-right: 110px;
+    }
+  }
 }

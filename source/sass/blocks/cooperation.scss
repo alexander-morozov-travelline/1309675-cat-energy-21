@@ -2,6 +2,13 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+  @media (min-width: $tablet) {
+    padding-top: 65px;
+    padding-left: 41px;
+    padding-right: 43px;
+    padding-bottom: 62px;
+  }
 }
 
 .cooperation__text {
@@ -12,10 +19,11 @@
   text-transform: uppercase;
   color: $almostBlack;
   min-width: 140px;
+  max-width: 171px;
 
   @media (min-width: $tablet) {
     font-size: 20px;
-    line-height: 21px;
+    line-height: 25px;
   }
 }
 
@@ -26,9 +34,18 @@
   font-size: 14px;
   line-height: 20px;
   color: $darkGrey;
+  max-width: 160px;
 
   @media (min-width: $tablet) {
     font-size: 16px;
     line-height: 20px;
+    text-align: right;
+  }
+}
+
+.cooperation__city {
+  @media (min-width: $tablet) {
+    display: inline-block;
+    margin-top: 18px;
   }
 }

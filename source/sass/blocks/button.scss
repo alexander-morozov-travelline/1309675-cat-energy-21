@@ -14,6 +14,12 @@
   text-decoration: none;
   justify-content: center;
 
+  @media (min-width: $tablet) {
+    padding: 17px 20px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
   &--program {
     font-size: 14px;
     line-height: 18px;

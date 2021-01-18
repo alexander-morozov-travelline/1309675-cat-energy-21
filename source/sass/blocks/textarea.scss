@@ -10,4 +10,11 @@
   text-transform: uppercase;
   color: $darkGrey;
   padding: 9px 10px 10px 14px;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 30px;
+    height: 175px;
+    padding: 9px 10px 10px 17px;
+  }
 }
