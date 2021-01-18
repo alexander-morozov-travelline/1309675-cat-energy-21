@@ -12,6 +12,7 @@
     flex-direction: row;
   }
 }
+
 .additional-goods__title {
   @include title();
   @include green-line();
