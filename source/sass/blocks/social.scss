@@ -1,3 +1,16 @@
 .social__list {
   @include reset-list;
+  display: flex;
+  justify-content: center;
+}
+
+.social__item {
+  display: inline-block;
+  margin-left: 18px;
+  margin-right: 18px;
+
+  @media (min-width: $tablet) {
+    margin-left: 14px;
+    margin-right: 14px;
+  }
 }

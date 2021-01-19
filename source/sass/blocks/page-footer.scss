@@ -3,6 +3,7 @@
   padding-top: 10px;
 
   @media (min-width: $desktop) {
+    padding-top: 0;
     margin-top: 45px;
   }
 }
@@ -16,10 +17,6 @@
   }
 }
 
-.page-footer__copyrite {
-  padding: 22px 20px 22px 19px;
-}
-
 .page-footer__map {
   width: 100%;
   height: 320px;
@@ -27,4 +24,73 @@
   @media (min-width: $tablet) {
     height: 400px;
   }
+}
+
+.padge-footer__wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 39px;
+  padding-bottom: 22px;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    padding-top: 39px;
+    padding-bottom: 22px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 57px;
+    padding-bottom: 58px;
+  }
+}
+
+.page-footer__logo {
+  text-align: center;
+  padding-top: 55px;
+  padding-bottom: 61px;
+
+  @media (min-width: $tablet) {
+    padding-top: 0;
+    padding-bottom: 0;
+    align-self: center;
+  }
+}
+
+.page-footer__social {
+  border-top: 1px solid $grey;
+  border-bottom: 1px solid $grey;
+  align-self: center;
+  margin-top: 26px;
+  margin-bottom: 26px;
+  padding-top: 16px;
+  padding-bottom: 22px;
+  width: 100%;
+
+  @media (min-width: $tablet) {
+    border-top: none;
+    border-bottom: none;
+    width: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    align-self: center;
+  }
+}
+
+.page-footer__copyrite {
+  padding-top: 3px;
+  padding-bottom: 22px;
+
+  @media (min-width: $tablet) {
+    padding-top: 0;
+    padding-bottom: 0;
+    align-self: center;
+  }
+}
+
+.page-footer__logo-image {
+  width: 128px;
+  height: 24px;
 }

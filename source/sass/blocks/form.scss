@@ -38,13 +38,14 @@
 .form__program-wrap {
   @media (min-width: $desktop) {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
   }
 }
 
 .form__program-content {
-  min-width: 570px;
+  @media (min-width: $desktop) {
+    min-width: 570px;
+  }
 }
 
 .form__label {
@@ -112,7 +113,6 @@
   @media (min-width: $desktop) {
     margin-top: 20px;
     min-width: 574px;
-    margin-right: -2px;
   }
 }
 
@@ -124,19 +124,14 @@
   @media (min-width: $tablet) {
     font-size: 36px;
     line-height: 36px;
-    padding-left: 40px;
-    padding-right: 43px;
-    margin-left: 29px;
   }
 
   @media (min-width: $desktop) {
     margin-top: 17px;
-    margin-left: 70px;
   }
 
   &--contact {
     margin-bottom: 21px;
-    max-width: 202px;
 
     @media (min-width: $tablet) {
       max-width: 100%;
@@ -166,6 +161,17 @@
 
     @media (min-width: $desktop) {
       margin-top: 61px;
+    }
+  }
+}
+
+.form__title-text {
+  @include title-text();
+
+  &--contact {
+    @media (max-width: $mobileOnly) {
+      max-width: 202px;
+      padding-right: 0;
     }
   }
 }

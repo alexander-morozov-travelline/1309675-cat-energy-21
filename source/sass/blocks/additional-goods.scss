@@ -24,6 +24,10 @@
   }
 }
 
+.additional-goods__title-text {
+  @include title-text();
+}
+
 .additional-goods__list {
   @include reset-list();
 

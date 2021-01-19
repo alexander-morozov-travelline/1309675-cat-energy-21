@@ -6,8 +6,8 @@
   flex-direction: column;
 
   @media (max-width: $mobileOnly) {
-    border-left: 0;
-    border-right: 0;
+    border-left: none;
+    border-right: none;
   }
 
   @media (min-width: $tablet) {
