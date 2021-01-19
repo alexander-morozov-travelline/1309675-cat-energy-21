@@ -25,18 +25,18 @@
       </div>
       <nav class="main-nav main-nav--index">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a class="site-list__item-link" href="index.html">
+          <li class="site-list__item site-list__item--active site-list__item--index">
+            <a class="site-list__item-link site-list__item-link--index" href="index.html">
               Главная
             </a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__item-link" href="catalog.html">
+            <a class="site-list__item-link site-list__item-link--index" href="catalog.html">
               Каталог продукции
             </a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__item-link" href="form.html">
+            <a class="site-list__item-link site-list__item-link--index" href="form.html">
               Подбор программы
             </a>
           </li>
@@ -90,7 +90,6 @@
       </section>
       <section class="advantages">
         <div class="container">
-
           <h2 class="section-title advantages__title ">Как это работает</h2>
           <ul class="advantages__list">
             <li class="advantages__item">
@@ -137,12 +136,27 @@
                 <h3 class="example__cost">Затраты на питание: <span class="example__cost-value"> 15 000 РУБ.</span></h3>
               </div>
             </div>
-            <div class="example__content">
-              <img src="https://via.placeholder.com/150x150" alt="example" class="example__image">
+            <div class="example__content example__content--right">
+              <div class="example__image-wrap">
+                <div class="example__image-content example__image-content--wide">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="./img/example-wide.png">
+                    <source media="(min-width: 768px)" srcset="./img/example-wide.png">
+                    <img class="example__image example__image--wide" src="./img/example-wide-mobile.png" alt="Cat Energy">
+                  </picture>
+                </div>
+                <div class="example__image-content example__image-content--thin">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="./img/example-thin.png">
+                    <source media="(min-width: 768px)" srcset="./img/example-thin.png">
+                    <img class="example__image example__image--thin" src="./img/example-thin.png" alt="Cat Energy">
+                  </picture>
+                </div>
+              </div>
               <div class="example__result">
-                <span class="example__before">было</span>
+                <span class="example__result-text example__result-text--before">было</span>
                 <span class="example__progress"></span>
-                <span class="example__after">стало</span>
+                <span class="example__result-text example__result-text--after">стало</span>
               </div>
             </div>
           </div>
@@ -150,7 +164,7 @@
       </section>
     </main>
     <footer class="page-footer">
-      <div class="container">
+      <div class="container container--white">
         <div class="page-footer__cooperation cooperation">
           <div class="cooperation__text">приглашаем<br>к сотрудничеству дилеров!</div>
           <div class="cooperation__address">
@@ -160,31 +174,30 @@
         </div>
       </div>
       <div id="map" class="page-footer__map"></div>
-      <div class="container">
-        <div class="padge-footer__wrap">
-          <a href="#" class="page-footer__logo">
-            <img class="page-footer__logo-image" src="https://via.placeholder.com/150x150" alt="Кэт Энерджи">
-          </a>
-          <div class="page-footer__social social">
-            <ul class="social__list">
-              <li class="social__item">
-                <a href="https://vk.com/htmlacademy" class="social__link social__link--vk">vk</a>
-              </li>
-              <li class="social__item">
-                <a href="https://www.instagram.com/htmlacademy" class="social__link social__link--instagram">instagram</a>
-              </li>
-              <li class="social__item">
-                <a href="https://www.facebook.com/htmlacademy" class="social__link social__link--facebook">facebook</a>
-              </li>
-            </ul>
-          </div>
-          <div class="page-footer__copyrite copyrite">
-            <span class="copyrite__text">HTML Academy</span>
-            <a class="copyrite__logo" href="https://htmlacademy.ru/intensive/adaptive">
-              <img class="copyrite__logo-image" src="https://via.placeholder.com/150x150" alt="HTML Academy">
-            </a>
-          </div>
+      <div class="page-footer__wrap">
+        <a href="#" class="page-footer__logo">
+          <img class="page-footer__logo-image" src="https://via.placeholder.com/150x150" alt="Кэт Энерджи">
+        </a>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a href="https://vk.com/htmlacademy" class="social__link social__link--vk">vk</a>
+            </li>
+            <li class="social__item">
+              <a href="https://www.instagram.com/htmlacademy" class="social__link social__link--instagram">instagram</a>
+            </li>
+            <li class="social__item">
+              <a href="https://www.facebook.com/htmlacademy" class="social__link social__link--facebook">facebook</a>
+            </li>
+          </ul>
         </div>
+        <div class="page-footer__copyrite copyrite">
+          <span class="copyrite__text">HTML Academy</span>
+          <a class="copyrite__logo" href="https://htmlacademy.ru/intensive/adaptive">
+            <img class="copyrite__logo-image" src="https://via.placeholder.com/150x150" alt="HTML Academy">
+          </a>
+        </div>
+      </div>
       </div>
     </footer>
   </body>
