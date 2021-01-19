@@ -9,6 +9,16 @@
     padding-right: 43px;
     padding-bottom: 62px;
   }
+
+  @media (min-width: $desktop) {
+    position: absolute;
+    z-index: 100;
+    width: 570px;
+    background: $white;
+    top: 95px;
+    box-sizing: border-box;
+  }
+
 }
 
 .cooperation__text {

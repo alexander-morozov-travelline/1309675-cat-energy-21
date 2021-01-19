@@ -20,13 +20,22 @@
     line-height: 20px;
   }
 
-  &--program {
+  &--wide {
     font-size: 14px;
     line-height: 18px;
 
     @media (min-width: $tablet) {
       padding: 17px 20px;
       font-size: 20px;
+      line-height: 20px;
+    }
+  }
+
+  &--catalog {
+    @media (min-width: $tablet) {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-size: 16px;
       line-height: 20px;
     }
   }
