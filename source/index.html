@@ -25,18 +25,18 @@
       </div>
       <nav class="main-nav main-nav--index">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a class="site-list__item-link" href="index.html">
+          <li class="site-list__item site-list__item--active site-list__item--index">
+            <a class="site-list__item-link site-list__item-link--index" href="index.html">
               Главная
             </a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__item-link" href="catalog.html">
+            <a class="site-list__item-link site-list__item-link--index" href="catalog.html">
               Каталог продукции
             </a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__item-link" href="form.html">
+            <a class="site-list__item-link site-list__item-link--index" href="form.html">
               Подбор программы
             </a>
           </li>
@@ -65,32 +65,47 @@
           <ul class="progress__list">
             <li class="progress__item">
               <div class="progress__header">
-                <img class="progress__header-image progress__header-image--slim" alt="Похудение" src="./img/progress/progress-1.png">
+                <div class="progress__image-wrap">
+                  <svg class="progress__image progress__image--slim" width="35" height="49">
+                    <use xlink:href="img/sprite.svg#icon-cat-slim"></use>
+                  </svg>
+                </div>
                 <h3 class="progress__title">Похудение</h3>
               </div>
               <div class="progress__text progress__text--slim">
                 <p>Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim
                   поможет вашему питомцу сбросить лишний вес.</p>
               </div>
-              <a class="progress__link" href="catalog.html">каталог slim</a>
+              <a class="progress__link" href="catalog.html">каталог slim
+                <svg class="progress__arrow" width="32" height="10">
+                  <use xlink:href="img/sprite.svg#icon-right-arrow-long"></use>
+                </svg>
+              </a>
             </li>
             <li class="progress__item">
               <div class="progress__header">
-                <img class="progress__header-image progress__header-image--weight" alt="Набор массы" src="./img/progress/progress-2.png">
+                <div class="progress__image-wrap">
+                  <svg class="progress__header-image progress__image--weight" width="67" height="28">
+                    <use xlink:href="img/sprite.svg#icon-cat-pro"></use>
+                  </svg>
+                </div>
                 <h3 class="progress__title">Набор массы</h3>
               </div>
               <div class="progress__text progress__text--weight">
                 <p>Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить
                   необходимые мышцы!</p>
               </div>
-              <a class="progress__link" href="catalog.html">каталог pro</a>
+              <a class="progress__link" href="catalog.html">каталог pro
+                <svg class="progress__arrow" width="32" height="10">
+                  <use xlink:href="img/sprite.svg#icon-right-arrow-long"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
       </section>
       <section class="advantages">
         <div class="container">
-
           <h2 class="section-title advantages__title ">Как это работает</h2>
           <ul class="advantages__list">
             <li class="advantages__item">
@@ -98,18 +113,22 @@
               <p class="advantages__text">Функциональное питание
                 содержит только полезные
                 питательные вещества.</p>
+              <span class="advantages__number">1</span>
             </li>
-            <li class="advantages__item">
+            <li class="advantages__item advantages__item--second">
               <img src="https://via.placeholder.com/150x150" alt="advantages" class="advantages__image">
               <p class="advantages__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+              <span class="advantages__number">2</span>
             </li>
-            <li class="advantages__item">
+            <li class="advantages__item advantages__item--third">
               <img src="https://via.placeholder.com/150x150" alt="advantages" class="advantages__image">
               <p class="advantages__text">Замените один-два приема обычной еды на наше функциональное питание.</p>
+              <span class="advantages__number">3</span>
             </li>
-            <li class="advantages__item">
+            <li class="advantages__item advantages__item--four">
               <img src="https://via.placeholder.com/150x150" alt="advantages" class="advantages__image">
               <p class="advantages__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+              <span class="advantages__number">4</span>
             </li>
           </ul>
         </div>
@@ -137,12 +156,29 @@
                 <h3 class="example__cost">Затраты на питание: <span class="example__cost-value"> 15 000 РУБ.</span></h3>
               </div>
             </div>
-            <div class="example__content">
-              <img src="https://via.placeholder.com/150x150" alt="example" class="example__image">
+            <div class="example__content example__content--right">
+              <div class="example__image-wrap">
+                <div class="example__image-content example__image-content--wide">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="./img/example-wide.png">
+                    <source media="(min-width: 768px)" srcset="./img/example-wide.png">
+                    <img class="example__image example__image--wide" src="./img/example-wide-mobile.png" alt="Cat Energy">
+                  </picture>
+                </div>
+                <div class="example__image-content example__image-content--thin">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="./img/example-thin.png">
+                    <source media="(min-width: 768px)" srcset="./img/example-thin.png">
+                    <img class="example__image example__image--thin" src="./img/example-thin.png" alt="Cat Energy">
+                  </picture>
+                </div>
+              </div>
               <div class="example__result">
-                <span class="example__before">было</span>
-                <span class="example__progress"></span>
-                <span class="example__after">стало</span>
+                <span class="example__result-text example__result-text--before">было</span>
+                <div class="example__progress-wrap">
+                  <span class="example__progress"></span>
+                </div>
+                <span class="example__result-text example__result-text--after">стало</span>
               </div>
             </div>
           </div>
@@ -150,7 +186,7 @@
       </section>
     </main>
     <footer class="page-footer">
-      <div class="container">
+      <div class="container container--white">
         <div class="page-footer__cooperation cooperation">
           <div class="cooperation__text">приглашаем<br>к сотрудничеству дилеров!</div>
           <div class="cooperation__address">
@@ -161,27 +197,39 @@
       </div>
       <div id="map" class="page-footer__map"></div>
       <div class="container">
-        <div class="padge-footer__wrap">
+        <div class="page-footer__wrap">
           <a href="#" class="page-footer__logo">
-            <img class="page-footer__logo-image" src="https://via.placeholder.com/150x150" alt="Кэт Энерджи">
+            <img src="img/logo-footer.svg" class="page-footer__logo-image" width="128" height="24" alt="Cat energy">
           </a>
           <div class="page-footer__social social">
             <ul class="social__list">
               <li class="social__item">
-                <a href="https://vk.com/htmlacademy" class="social__link social__link--vk">vk</a>
+                <a href="https://vk.com/htmlacademy" class="social__link social__link--vk" aria-label="vk">
+                  <svg class="social__icon social__icon--vk" width="16" height="16">
+                    <use xlink:href="img/sprite.svg#icon-vk"></use>
+                  </svg>
+                </a>
               </li>
               <li class="social__item">
-                <a href="https://www.instagram.com/htmlacademy" class="social__link social__link--instagram">instagram</a>
+                <a href="https://www.instagram.com/htmlacademy" class="social__link social__link--instagram" aria-label="instagram">
+                  <svg class="social__icon social__icon--instagram" width="16" height="16">
+                    <use xlink:href="img/sprite.svg#icon-insta"></use>
+                  </svg>
+                </a>
               </li>
               <li class="social__item">
-                <a href="https://www.facebook.com/htmlacademy" class="social__link social__link--facebook">facebook</a>
+                <a href="https://www.facebook.com/htmlacademy" class="social__link social__link--facebook" aria-label="facebook">
+                  <svg class="social__icon social__icon--facebook" width="10" height="19">
+                    <use xlink:href="img/sprite.svg#icon-fb"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
           </div>
           <div class="page-footer__copyrite copyrite">
-            <span class="copyrite__text">HTML Academy</span>
             <a class="copyrite__logo" href="https://htmlacademy.ru/intensive/adaptive">
-              <img class="copyrite__logo-image" src="https://via.placeholder.com/150x150" alt="HTML Academy">
+              <span class="copyrite__text">HTML Academy</span>
+              <img src="img/htmlacademy.svg" class="copyrite__logo-image" width="27" height="34" alt="Cat energy">
             </a>
           </div>
         </div>

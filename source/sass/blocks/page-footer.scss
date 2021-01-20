@@ -1,9 +1,5 @@
 .page-footer {
   background: $smokyWhiteLight;
-
-  @media (min-width: $desktop) {
-    margin-top: 45px;
-  }
 }
 
 .page-footer__cooperation {
@@ -17,14 +13,14 @@
 
 .page-footer__map {
   width: 100%;
-  height: 320px;
+  height: 362px;
 
   @media (min-width: $tablet) {
     height: 400px;
   }
 }
 
-.padge-footer__wrap {
+.page-footer__wrap {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -33,8 +29,8 @@
 
   @media (min-width: $tablet) {
     flex-direction: row;
-    padding-top: 39px;
-    padding-bottom: 22px;
+    padding-top: 51px;
+    padding-bottom: 57px;
   }
 
   @media (min-width: $desktop) {
@@ -45,8 +41,6 @@
 
 .page-footer__logo {
   text-align: center;
-  padding-top: 55px;
-  padding-bottom: 61px;
 
   @media (min-width: $tablet) {
     padding-top: 0;

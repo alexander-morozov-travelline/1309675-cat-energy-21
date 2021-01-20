@@ -16,9 +16,10 @@
     width: 570px;
     background: $white;
     top: 95px;
+    padding-left: 76px;
+    padding-right: 83px;
     box-sizing: border-box;
   }
-
 }
 
 .cooperation__text {
@@ -50,6 +51,10 @@
     font-size: 16px;
     line-height: 20px;
     text-align: right;
+  }
+
+  @media (min-width: $desktop) {
+    text-align: left;
   }
 }
 

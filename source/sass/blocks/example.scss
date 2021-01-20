@@ -8,13 +8,17 @@
     background-color: $white;
     margin-top: 43px;
     padding-top: 43px;
+    padding-bottom: 0;
     border-top: 1px solid $smokyWhite2;
   }
 
   @media (min-width: $desktop) {
     border: none;
-    margin-top: 20px;
-    background: linear-gradient($white 0%, $white 179px, $smokyWhite 180px, $smokyWhite 100%);
+    margin-top: 65px;
+    padding-top: 0;
+    padding-bottom: 60px;
+
+    @include color-fill($white, $smokyWhiteLight);
   }
 }
 
@@ -36,7 +40,10 @@
 }
 
 .example__wrap {
+  position: relative;
+
   @media (min-width: $desktop) {
+    position: initial;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -49,6 +56,181 @@
       max-width: 436px;
     }
   }
+
+  &--right {
+    @media (min-width: $tablet) and (max-width: $beforeDesktop) {
+      @include color-fill($white, $smokyWhite);
+      margin-left: -30px;
+      margin-right: -30px;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    @media (min-width: $desktop) {
+      width: 690px;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+}
+
+.example__image-wrap {
+  width: 100%;
+  display: flex;
+}
+
+.example__image-content {
+  width: 100%;
+
+  @media (min-width: $tablet) {
+    width: 50%;
+
+    @include color-fill($white, $smokyWhite);
+  }
+
+  &--wide {
+    @media (min-width: $desktop) {
+      @include color-fill($white, $smokyWhiteLight);
+    }
+  }
+
+  &--thin {
+    display: none;
+
+    @media (min-width: $tablet) {
+      display: block;
+      top: 0;
+      right: 0;
+    }
+
+    @media (min-width: $desktop) {
+      @include color-fill($white, $smokyWhite);
+    }
+  }
+}
+
+.example__image {
+  width: 100%;
+
+  @media (min-width: $tablet) {
+    float: left;
+  }
+}
+
+.example__result {
+  display: flex;
+  width: 100%;
+  padding-left: 45px;
+  padding-right: 38px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet) {
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+  }
+}
+
+.example__progress-wrap {
+  position: relative;
+  align-self: center;
+  flex-grow: 2;
+}
+
+.example__progress {
+  position: relative;
+  display: flex;
+  width: 100%;
+  background-color: $white;
+  border: 1px solid $smokyWhite;
+  box-sizing: border-box;
+  height: 14px;
+  border-radius: 5px;
+
+  @media (min-width: $tablet) {
+    background-color: $lightTelegrey;
+    border: none;
+    height: 6px;
+  }
+
+  &::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+    @media (min-width: $tablet) {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      margin-left: -2px;
+      filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
+      background-color: $white;
+    }
+  }
+
+  &::after {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    transform: translateY(-50%);
+    background-color: $green;
+    width: 42%;
+    height: 6px;
+    left: 6px;
+    top: 6px;
+    border-radius: 3px;
+
+    @media (min-width: $tablet) {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      left: 50%;
+      top: 50%;
+      margin-left: -2px;
+      transform: translateX(-50%) translateY(-50%);
+    }
+  }
+}
+
+.example__result-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    border-bottom: 1px solid $grey2;
+  }
+
+  &--before {
+    margin-right: 18px;
+
+    @media (min-width: $tablet) {
+      margin-right: 24px;
+    }
+  }
+
+  &--after {
+    margin-left: 16px;
+
+    @media (min-width: $tablet) {
+      margin-left: 24px;
+    }
+  }
+}
+
+.example__after {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin-left: 14px;
 }
 
 .example__text {
@@ -105,6 +287,7 @@
 .example__data {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   margin-top: 25px;
 
   @media (min-width: $tablet) {
@@ -174,7 +357,7 @@
   }
 
   @media (min-width: $desktop) {
-    background-color: $smokyWhite;
+    background-color: $smokyWhiteLight;
   }
 
   &--weight {

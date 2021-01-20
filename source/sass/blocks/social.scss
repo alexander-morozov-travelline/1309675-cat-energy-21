@@ -2,6 +2,10 @@
   @include reset-list;
   display: flex;
   justify-content: center;
+
+  @media (min-width: $desktop) {
+    margin-left: 21px;
+  }
 }
 
 .social__item {
@@ -12,5 +16,28 @@
   @media (min-width: $tablet) {
     margin-left: 14px;
     margin-right: 14px;
+  }
+}
+
+.social__icon {
+  &--vk {
+    @media (min-width: $tablet) {
+      width: 30px;
+      height: 16px;
+    }
+  }
+
+  &--instagram {
+    @media (min-width: $tablet) {
+      width: 23px;
+      height: 23px;
+    }
+  }
+
+  &--facebook {
+    @media (min-width: $tablet) {
+      width: 14px;
+      height: 28px;
+    }
   }
 }

@@ -59,3 +59,7 @@
     }
   }
 }
+
+@mixin color-fill($colorTop, $colorBottom) {
+  background: linear-gradient($colorTop 0%, $colorTop 137px, $colorBottom 138px, $colorBottom 100%);
+}
