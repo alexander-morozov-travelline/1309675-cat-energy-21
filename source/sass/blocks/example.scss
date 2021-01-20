@@ -16,6 +16,7 @@
     margin-top: 65px;
     padding-top: 0;
     padding-bottom: 60px;
+
     @include color-fill($white, $smokyWhiteLight);
   }
 }
@@ -83,6 +84,7 @@
 
   @media (min-width: $tablet) {
     width: 50%;
+
     @include color-fill($white, $smokyWhite);
   }
 
