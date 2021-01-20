@@ -21,6 +21,18 @@
   }
 }
 
+.copyrite__logo {
+  text-decoration: none;
+  color: $darkGrey;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  @media (min-width: $tablet) {
+    width: 163px;
+  }
+}
+
 .copyrite__logo-image {
   width: 27px;
   height: 34px;
