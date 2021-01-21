@@ -26,9 +26,7 @@
     border-top: none;
     width: 324px;
     background: linear-gradient($white 0%, $white 81px, $smokyWhiteLight 82px, $smokyWhiteLight 100%);
-    padding-left: 36px;
-    padding-right: 36px;
-    padding-bottom: 40px;
+    margin-top: 59px;
   }
 
   @media (min-width: $desktop) {
@@ -45,10 +43,8 @@
   }
 
   &:not(:first-child) {
-    margin-top: 24px;
-
-    @media (min-width: $tablet) {
-      margin-top: 0;
+    @media (max-width: $mobileOnly) {
+      margin-top: 24px;
     }
   }
 
