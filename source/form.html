@@ -52,15 +52,15 @@
           <div class="form__program-wrap">
             <div class="form__program-content">
               <label class="form__label label">
-                <span class="form__input-text">Имя:*</span>
+                <span class="form__input-text form__input-text--name">Имя:*</span>
                 <input class="input form__input" type="text" name="name" placeholder="барсик">
               </label>
               <label class="form__label label">
-                <span class="form__input-text">Вес (кг):*</span>
+                <span class="form__input-text form__input-text--weight">Вес (кг):*</span>
                 <input class="input form__input input form__input--weight" type="text" name="weight" placeholder="7">
               </label>
               <label class="form__label label">
-                <span class="form__input-text">Возраст&nbsp;(лет):</span>
+                <span class="form__input-text form__input-text-age">Возраст&nbsp;(лет):</span>
                 <input class="input form__input form__input--age" type="text" name="age" placeholder="7">
               </label>
             </div>
@@ -86,12 +86,18 @@
         <div class="container container--form">
           <div class="form__contact-content">
             <label class="form__label label">
-              <span class="form__input-text">E-mail:*</span>
-              <input class="form__input input input--email" type="text" name="email" placeholder="kuklachev@gmail.com">
+              <span class="form__input-text form__input-text--email">E-mail:*</span>
+              <input class="form__input form__input--email input" type="text" name="email" placeholder="kuklachev@gmail.com">
+              <svg class="form__input-icon form__input-icon--email" width="20" height="20">
+                <use xlink:href="img/sprite.svg#icon-mail" class="form__input-svg"></use>
+              </svg>
             </label>
             <label class="form__label label">
-              <span class="form__input-text">Телефон:*</span>
-              <input class="form__input input input--phone" type="text" name="phone" placeholder="8 (960) 900-60-90">
+              <span class="form__input-text form__input-text--phone">Телефон:*</span>
+              <input class="form__input form__input--phone input" type="text" name="phone" placeholder="8 (960) 900-60-90">
+              <svg class="form__input-icon form__input-icon--phone" width="20" height="20">
+                <use xlink:href="img/sprite.svg#icon-phone" class="form__input-svg"></use>
+              </svg>
             </label>
           </div>
         </div>
@@ -131,7 +137,7 @@
       </form>
     </main>
     <footer class="page-footer">
-      <div class="container container--white">
+      <div class="container">
         <div class="page-footer__cooperation cooperation">
           <div class="cooperation__text">приглашаем<br>к сотрудничеству дилеров!</div>
           <div class="cooperation__address">
@@ -166,22 +172,22 @@
             <ul class="social__list">
               <li class="social__item">
                 <a href="https://vk.com/htmlacademy" class="social__link social__link--vk" aria-label="vk">
-                  <svg class="social__icon social__icon--vk" width="16" height="16">
-                    <use xlink:href="img/sprite.svg#icon-vk"></use>
+                  <svg class="social__icon social__icon--vk" width="23" height="16">
+                    <use xlink:href="img/sprite.svg#icon-vk" class="social__icon-svg"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
                 <a href="https://www.instagram.com/htmlacademy" class="social__link social__link--instagram" aria-label="instagram">
                   <svg class="social__icon social__icon--instagram" width="16" height="16">
-                    <use xlink:href="img/sprite.svg#icon-insta"></use>
+                    <use xlink:href="img/sprite.svg#icon-insta" class="social__icon-svg"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
                 <a href="https://www.facebook.com/htmlacademy" class="social__link social__link--facebook" aria-label="facebook">
                   <svg class="social__icon social__icon--facebook" width="10" height="19">
-                    <use xlink:href="img/sprite.svg#icon-fb"></use>
+                    <use xlink:href="img/sprite.svg#icon-fb" class="social__icon-svg"></use>
                   </svg>
                 </a>
               </li>
@@ -190,7 +196,7 @@
           <div class="page-footer__copyrite copyrite">
             <a class="copyrite__logo" href="https://htmlacademy.ru/intensive/adaptive">
               <span class="copyrite__text">HTML Academy</span>
-              <img src="img/htmlacademy.svg" class="copyrite__logo-image" width="27" height="34" alt="Cat energy">
+              <img src="img/htmlacademy.svg" class="copyrite__logo-image" width="40" height="40" alt="Cat energy">
             </a>
           </div>
         </div>

@@ -3,8 +3,8 @@
 }
 
 .page-footer__cooperation {
-  padding-top: 19px;
-  padding-bottom: 26px;
+  padding-top: 28px;
+  padding-bottom: 27px;
 
   @media (min-width: $tablet) {
     padding-top: 67px;
@@ -65,10 +65,11 @@
   border-bottom: 1px solid $grey;
   align-self: center;
   margin-top: 26px;
-  margin-bottom: 26px;
-  padding-top: 16px;
-  padding-bottom: 22px;
+  margin-bottom: 16px;
+  padding-top: 20px;
+  padding-bottom: 17px;
   width: 100%;
+  padding-right: 10px;
 
   @media (min-width: $tablet) {
     border-top: none;
