@@ -49,32 +49,41 @@
   &--second {
     @media (min-width: $desktop) {
       width: 246px;
-      margin-left: 18px;
+      left: 12px;
     }
   }
 
   &--third {
     @media (min-width: $desktop) {
       width: 248px;
+      left: 9px;
     }
   }
 
   &--four {
     @media (min-width: $desktop) {
       width: 250px;
+      left: 3px;
     }
   }
 }
 
-.advantages__image {
+.advantages__image-wrap {
   width: 60px;
   height: 60px;
   margin-right: 21px;
+  background-color: $green;
+  display: flex;
+  justify-content: center;
 
   @media (min-width: $tablet) {
     width: 80px;
     height: 80px;
   }
+}
+
+.advantages__image {
+  align-self: center;
 }
 
 .advantages__title {
@@ -108,7 +117,7 @@
 .advantages__number {
   display: none;
   position: absolute;
-  z-index: -1;
+  z-index: -3;
   top: 0;
   right: 0;
 

@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="./css/style.min.css" rel="stylesheet">
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-    <script src="./js/main.min.js" type="text/javascript"></script>
+    <script src="./js/main.js" type="text/javascript"></script>
+    <script src="./js/svgxuse.min.js" type="text/javascript"></script>
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body>
@@ -52,9 +53,17 @@
           </div>
           <div class="promo__footer">
             <picture>
-              <source media="(min-width: 1200px)" srcset="./img/promo-desktop.png">
-              <source media="(min-width: 768px)" srcset="./img/promo-tablet.png">
-              <img class="promo__image" src="./img/promo-mobile.png" alt="Функциональное питание для котов">
+              <source type="image/webp" media="(min-width: 1200px)"
+                      srcset="img/index-can-desktop@1x.webp 1x, img/index-can-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/index-can-tablet@1x.webp 1x, img/index-can-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/index-can-mobile@1x.webp 1x, img/index-can-mobile@2x.webp 2x">
+
+              <source media="(min-width: 1200px)"
+                      srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
+              <img class="promo__image" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x"
+                    width="280" height="271" alt="Функциональное питание для котов">
             </picture>
             <a class="promo__button button button--wide" href="form.html">подобрать программу</a>
           </div>
@@ -85,7 +94,7 @@
             <li class="progress__item">
               <div class="progress__header">
                 <div class="progress__image-wrap">
-                  <svg class="progress__header-image progress__image--weight" width="67" height="28">
+                  <svg class="progress__image progress__image--weight" width="67" height="28">
                     <use xlink:href="img/sprite.svg#icon-cat-pro"></use>
                   </svg>
                 </div>
@@ -109,24 +118,40 @@
           <h2 class="section-title advantages__title ">Как это работает</h2>
           <ul class="advantages__list">
             <li class="advantages__item">
-              <img src="https://via.placeholder.com/150x150" alt="advantages" class="advantages__image">
+              <picture class="advantages__image-wrap">
+                <source type="image/webp" srcset="img/advantage-leaf@1x.webp 1x, img/advantage-leaf@2x.webp 2x">
+                <img class="advantages__image" width="50" height="50" alt="Функциональное питание"
+                      src="img/advantage-leaf@1x.png" srcset="img/advantage-leaf@2x.png 2x">
+              </picture>
               <p class="advantages__text">Функциональное питание
                 содержит только полезные
                 питательные вещества.</p>
               <span class="advantages__number">1</span>
             </li>
             <li class="advantages__item advantages__item--second">
-              <img src="https://via.placeholder.com/150x150" alt="advantages" class="advantages__image">
+              <picture class="advantages__image-wrap">
+                <source type="image/webp" srcset="img/advantage-powder@1x.webp 1x, img/advantage-powder@2x.webp 2x">
+                <img class="advantages__image" src="img/advantage-powder@1x.png" width="50" height="50"
+                      alt="Выпускается в виде порошка">
+              </picture>
               <p class="advantages__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
               <span class="advantages__number">2</span>
             </li>
             <li class="advantages__item advantages__item--third">
-              <img src="https://via.placeholder.com/150x150" alt="advantages" class="advantages__image">
+              <picture class="advantages__image-wrap">
+                <source type="image/webp" srcset="img/advantage-dining@1x.webp 1x, img/advantage-dining@2x.webp 2x">
+                <img class="advantages__image" src="img/advantage-dining@1x.png" width="50" height="50"
+                      alt="Замените один-два приема обычной еды">
+              </picture>
               <p class="advantages__text">Замените один-два приема обычной еды на наше функциональное питание.</p>
               <span class="advantages__number">3</span>
             </li>
             <li class="advantages__item advantages__item--four">
-              <img src="https://via.placeholder.com/150x150" alt="advantages" class="advantages__image">
+              <picture class="advantages__image-wrap">
+                <source type="image/webp" srcset="img/advantage-clock@1x.webp 1x, img/advantage-clock@2x.webp 2x">
+                <img class="advantages__image" src="img/advantage-clock@1x.png" width="50" height="50"
+                      alt="Уже через месяц наслаждайтесь изменениями">
+              </picture>
               <p class="advantages__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
               <span class="advantages__number">4</span>
             </li>

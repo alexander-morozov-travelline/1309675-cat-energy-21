@@ -33,7 +33,7 @@
     display: inline;
     position: relative;
     padding: 0;
-    margin-left: 30px;
+    margin-left: 35px;
   }
 
   @media (min-width: $desktop) {
@@ -41,18 +41,21 @@
     font-weight: normal;
     font-size: 20px;
     line-height: 30px;
-    margin-left: 32px;
   }
 
   &--active {
-    @media (min-width: $tablet) {
-      &::before {
+    &::before {
+      @media (min-width: $tablet) {
         position: absolute;
         content: "";
         bottom: -9px;
-        width: calc(100% - 4px);
-        transform: translateX(-2px);
+        width: calc(100% - 3px);
+        transform: translateX(2px);
         border-bottom: 2px solid #68b738;
+      }
+
+      @media (min-width: $desktop) {
+        bottom: -7px;
       }
     }
   }

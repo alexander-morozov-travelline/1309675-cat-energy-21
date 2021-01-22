@@ -1,14 +1,15 @@
 .main-nav {
   @media (max-width: $mobileOnly) {
     margin-top: 10px;
+    position: relative;
   }
 
   @media (min-width: $tablet) {
-    padding-right: 32px;
+    padding-right: 30px;
   }
 
   @media (min-width: $desktop) {
-    padding-right: 110px;
+    padding-right: 111px;
   }
 
   &--close {
@@ -18,15 +19,33 @@
   }
 
   &--index {
-    &::before {
-      @media (min-width: 1330px) {
-        position: absolute;
-        background-image: url("../img/menu-bg.jpg");
-        content: "";
+    &::after {
+      position: absolute;
+      content: "";
+      background-size: cover;
+      z-index: -1;
+
+      @media (max-width: $mobileOnly) {
+        width: 100%;
+        height: 302px;
+        background: url("../img/index-background-mobile@1x.jpg") no-repeat top center, linear-gradient(90deg, #65a93c, #63a73a);
+
+        @media (min-resolution: $retinaDpi), (min-resolution: $retinaDppx) {
+          background: url("../img/index-background-mobile@2x.jpg") no-repeat top center, linear-gradient(90deg, #65a93c, #63a73a);
+        }
+      }
+
+      @media (min-width: $desktop) {
         top: 0;
         right: 0;
         width: 720px;
         height: 694px;
+        background: url("../img/index-background-desktop@1x.jpg") no-repeat top center, linear-gradient(90deg, #65a93c, #63a73a);
+        background-size: cover;
+
+        @media (min-resolution: $retinaDpi), (min-resolution: $retinaDppx) {
+          background: url("../img/index-background-desktop@2x.jpg") no-repeat top center, linear-gradient(90deg, #65a93c, #63a73a);
+        }
       }
     }
   }

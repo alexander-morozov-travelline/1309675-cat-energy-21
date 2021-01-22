@@ -14,10 +14,6 @@
   margin-right: -20px;
   padding: 28px 20px 150px 20px;
 
-  @media (max-width: $mobileOnly) {
-    background-image: url("../img/promo-bg.jpg");
-  }
-
   @media (min-width: $tablet) {
     padding-bottom: 0;
   }
@@ -50,10 +46,17 @@
 }
 
 .promo__image {
+  @media (min-width: $tablet) {
+    width: 709px;
+    height: 609px;
+  }
+
   @media (min-width: $desktop) {
     position: absolute;
-    bottom: -130px;
-    right: -347px;
+    bottom: -131px;
+    right: -344px;
+    width: 552px;
+    height: 499px;
   }
 }
 
@@ -68,12 +71,16 @@
   margin-bottom: 0;
 
   @media (min-width: $tablet) {
-    margin-left: 80px;
+    margin-left: 87px;
     padding: 1px 65px 0 0;
     color: black;
     font-size: 60px;
     line-height: 60px;
     text-align: left;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: 78px;
   }
 }
 
@@ -93,6 +100,10 @@
     font-size: 20px;
     line-height: 20px;
     margin-top: 42px;
-    margin-left: 80px;
+    margin-left: 79px;
+  }
+
+  @media (min-width: $tablet) {
+    margin-left: 88px;
   }
 }
