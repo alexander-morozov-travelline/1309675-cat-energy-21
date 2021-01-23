@@ -65,10 +65,21 @@
 
 .form__input-text {
   align-self: center;
+  position: relative;
 
   @media (min-width: $tablet) {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  &--email {
+    top: -3px;
+    left: -1px;
+  }
+
+  &--phone {
+    top: -3px;
+    left: -1px;
   }
 }
 
@@ -95,6 +106,33 @@
       margin-left: 20px;
     }
   }
+
+  &--email {
+    margin-left: 11px;
+  }
+
+  &--phone {
+    margin-left: 10px;
+    top: -3px;
+  }
+}
+
+.form__input-icon {
+  position: absolute;
+  top: 13px;
+  pointer-events: none;
+
+  &--email {
+    right: 15px;
+  }
+
+  &--phone {
+    right: 13px;
+  }
+}
+
+.form__input-svg {
+  fill: #222222;
 }
 
 .form__radio {
@@ -131,7 +169,7 @@
   }
 
   &--contact {
-    margin-bottom: 21px;
+    margin-bottom: 22px;
 
     @media (min-width: $tablet) {
       max-width: 100%;

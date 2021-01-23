@@ -1,33 +1,20 @@
 .main-nav {
   @media (max-width: $mobileOnly) {
     margin-top: 10px;
+    position: relative;
   }
 
   @media (min-width: $tablet) {
-    padding-right: 32px;
+    padding-right: 30px;
   }
 
   @media (min-width: $desktop) {
-    padding-right: 110px;
+    padding-right: 111px;
   }
 
   &--close {
     @media (max-width: $mobileOnly) {
       display: none;
-    }
-  }
-
-  &--index {
-    &::before {
-      @media (min-width: 1330px) {
-        position: absolute;
-        background-image: url("../img/menu-bg.jpg");
-        content: "";
-        top: 0;
-        right: 0;
-        width: 720px;
-        height: 694px;
-      }
     }
   }
 }

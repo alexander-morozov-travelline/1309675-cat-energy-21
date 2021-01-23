@@ -15,6 +15,7 @@
   font-size: 16px;
   line-height: 18px;
   color: $darkGrey;
+  align-self: center;
 
   @media (min-width: $tablet) {
     align-self: center;
@@ -34,6 +35,8 @@
 }
 
 .copyrite__logo-image {
-  width: 27px;
-  height: 34px;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  right: -6px;
 }
