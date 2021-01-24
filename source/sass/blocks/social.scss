@@ -2,16 +2,13 @@
   @include reset-list;
   display: flex;
   justify-content: center;
-
-  @media (min-width: $desktop) {
-    margin-left: 21px;
-  }
 }
 
 .social__item {
   display: inline-block;
-  margin-left: 18px;
-  margin-right: 18px;
+  margin-left: 20px;
+  margin-right: 20px;
+  align-self: center;
 
   @media (min-width: $tablet) {
     margin-left: 14px;
@@ -20,10 +17,16 @@
 }
 
 .social__icon {
+  position: relative;
+
   &--vk {
+    left: 4px;
+
     @media (min-width: $tablet) {
       width: 30px;
       height: 16px;
+      left: 0;
+      top: -2px;
     }
   }
 
@@ -38,6 +41,7 @@
     @media (min-width: $tablet) {
       width: 14px;
       height: 28px;
+      top: -3px;
     }
   }
 }

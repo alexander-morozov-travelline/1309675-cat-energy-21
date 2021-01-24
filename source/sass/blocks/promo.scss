@@ -29,8 +29,11 @@
 }
 
 .promo__button {
+  margin-top: 3px;
+
   @media (min-width: $tablet) {
     position: absolute;
+    margin-top: 0;
     max-width: 244px;
     top: 29px;
     left: 83px;
@@ -40,9 +43,13 @@
     position: relative;
     top: 0;
     left: 0;
-    margin-top: 51px;
+    margin-top: 32px;
     margin-left: 80px;
   }
+}
+
+.promo__image-wrap {
+  display: flex;
 }
 
 .promo__image {
@@ -103,7 +110,7 @@
     margin-left: 79px;
   }
 
-  @media (min-width: $tablet) {
-    margin-left: 88px;
+  @media (min-width: $desktop) {
+    margin-left: 80px;
   }
 }

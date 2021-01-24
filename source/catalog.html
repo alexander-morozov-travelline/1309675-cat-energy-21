@@ -26,17 +26,17 @@
       </div>
       <nav class="main-nav">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item">
+          <li class="site-list__item site-list__item--index">
             <a class="site-list__item-link" href="index.html">
               Главная
             </a>
           </li>
-          <li class="site-list__item site-list__item--active">
+          <li class="site-list__item site-list__item--catalog site-list__item--active">
             <a class="site-list__item-link" href="catalog.html">
               Каталог продукции
             </a>
           </li>
-          <li class="site-list__item">
+          <li class="site-list__item site-list__item--form">
             <a class="site-list__item-link" href="form.html">
               Подбор программы
             </a>
@@ -47,7 +47,7 @@
     <main class="page-main">
       <section class="catalog">
         <div class="container">
-          <h1 class="title page-main__title">Каталог продукции</h1>
+          <h1 class="page-main__title page-main__title--catalog title">Каталог продукции</h1>
           <ul class="catalog__list">
             <li class="catalog__item">
               <div class="product">
@@ -65,7 +65,7 @@
                           srcset="img/chicken-small-tablet@1x.png 1x, img/chicken-small-tablet@2x.png 2x">
                   <img class="product__image product__image--chicken-500"
                         src="img/chicken-small-mobile@1x.jpg" srcset="img/chicken-small-mobile@2x.jpg 2x"
-                        width="140" height="144" alt="Cat energy pro 500г - курица">
+                        width="140" height="112" alt="Cat energy pro 500г - курица">
                 </picture>
                 <div class="product__content">
                   <div class="product__info">
@@ -107,7 +107,7 @@
                           srcset="img/chicken-big-tablet@1x.png 1x, img/chicken-big-tablet@2x.png 2x">
                   <img class="product__image product__image--chicken-1000"
                         src="img/chicken-big-mobile@1x.jpg" srcset="img/chicken-big-mobile@2x.jpg 2x"
-                        width="140" height="144" alt="Cat energy pro 1000г - курица">
+                        width="140" height="112" alt="Cat energy pro 1000г - курица">
                 </picture>
                 <div class="product__content">
                   <div class="product__info">
@@ -149,7 +149,7 @@
                           srcset="img/fish-small-tablet@1x.png 1x, img/fish-small-tablet@2x.png 2x">
                   <img class="product__image product__image--fish-500"
                         src="img/fish-small-mobile@1x.jpg" srcset="img/fish-small-mobile@2x.jpg 2x"
-                        width="140" height="144" alt="Cat energy pro 500г - рыба">
+                        width="140" height="112" alt="Cat energy pro 500г - рыба">
                 </picture>
                 <div class="product__content">
                   <div class="product__info">
@@ -191,7 +191,7 @@
                           srcset="img/fish-big-tablet@1x.png 1x, img/fish-big-tablet@2x.png 2x">
                   <img class="product__image product__image--fish-1000"
                         src="img/fish-big-mobile@1x.jpg" srcset="img/fish-big-mobile@2x.jpg 2x"
-                        width="140" height="144" alt="Cat energy pro 1000г - рыба">
+                        width="140" height="112" alt="Cat energy pro 1000г - рыба">
                 </picture>
                 <div class="product__content">
                   <div class="product__info">
@@ -233,7 +233,7 @@
                           srcset="img/buckwheat-small-tablet@1x.png 1x, img/buckwheat-small-tablet@2x.png 2x">
                   <img class="product__image product__image--buckwheat-500"
                         src="img/buckwheat-small-mobile@1x.jpg" srcset="img/buckwheat-small-mobile@2x.jpg 2x"
-                        width="140" height="144" alt="Cat energy slim 500г - гречка">
+                        width="140" height="112" alt="Cat energy slim 500г - гречка">
                 </picture>
                 <div class="product__content">
                   <div class="product__info">
@@ -275,7 +275,7 @@
                           srcset="img/buckwheat-big-tablet@1x.png 1x, img/buckwheat-big-tablet@2x.png 2x">
                   <img class="product__image product__image--buckwheat-1000"
                         src="img/buckwheat-big-mobile@1x.jpg" srcset="img/buckwheat-big-mobile@2x.jpg 2x"
-                        width="140" height="144" alt="Cat energy slim 1000г - гречка">
+                        width="140" height="112" alt="Cat energy slim 1000г - гречка">
                 </picture>
                 <div class="product__content">
                   <div class="product__info">
@@ -317,7 +317,7 @@
                           srcset="img/rice-small-tablet@1x.png 1x, img/rice-small-tablet@2x.png 2x">
                   <img class="product__image product__image--rice-500"
                         src="img/rice-small-mobile@1x.jpg" srcset="img/rice-small-mobile@2x.jpg 2x"
-                        width="140" height="144" alt="Cat energy slim 500г - рис">
+                        width="140" height="112" alt="Cat energy slim 500г - рис">
                 </picture>
                 <div class="product__content">
                   <div class="product__info">
@@ -348,7 +348,7 @@
                 <span class="catalog_plus"></span>
                 <h3 class="catalog__more-title">Показать еще 100500 товаров</h3>
                 <p class="catalog__more-text">На самом деле вкусов гораздо больше!</p>
-                <button type="button" class="catalog__button-all">показать все</button>
+                <button type="button" class="catalog__button-all button button--grey">показать все</button>
               </div>
             </li>
           </ul>
@@ -410,7 +410,9 @@
           </ul>
           <div class="present">
             <div class="present__wrap">
-              <i class="present__icon"></i>
+              <svg class="present__icon" width="56" height="61">
+                <use xlink:href="img/sprite.svg#icon-gift" class="present__icon-svg"></use>
+              </svg>
               <p class="present__text">Закажите все<br>и получите чехол для кота в подарок!</p>
             </div>
           </div>
@@ -455,21 +457,21 @@
               <li class="social__item">
                 <a href="https://vk.com/htmlacademy" class="social__link social__link--vk" aria-label="vk">
                   <svg class="social__icon social__icon--vk" width="16" height="16">
-                    <use xlink:href="img/sprite.svg#icon-vk"></use>
+                    <use xlink:href="img/sprite.svg#icon-vk" class="social__icon-svg"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
                 <a href="https://www.instagram.com/htmlacademy" class="social__link social__link--instagram" aria-label="instagram">
                   <svg class="social__icon social__icon--instagram" width="16" height="16">
-                    <use xlink:href="img/sprite.svg#icon-insta"></use>
+                    <use xlink:href="img/sprite.svg#icon-insta" class="social__icon-svg"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
                 <a href="https://www.facebook.com/htmlacademy" class="social__link social__link--facebook" aria-label="facebook">
                   <svg class="social__icon social__icon--facebook" width="10" height="19">
-                    <use xlink:href="img/sprite.svg#icon-fb"></use>
+                    <use xlink:href="img/sprite.svg#icon-fb" class="social__icon-svg"></use>
                   </svg>
                 </a>
               </li>

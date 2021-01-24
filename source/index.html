@@ -31,12 +31,12 @@
               Главная
             </a>
           </li>
-          <li class="site-list__item">
+          <li class="site-list__item site-list__item--catalog">
             <a class="site-list__item-link site-list__item-link--index" href="catalog.html">
               Каталог продукции
             </a>
           </li>
-          <li class="site-list__item">
+          <li class="site-list__item site-list__item--form">
             <a class="site-list__item-link site-list__item-link--index" href="form.html">
               Подбор программы
             </a>
@@ -52,7 +52,7 @@
             <p class="promo__text">Занялся собой? Займись котом!</p>
           </div>
           <div class="promo__footer">
-            <picture>
+            <picture class="promo__image-wrap">
               <source type="image/webp" media="(min-width: 1200px)"
                       srcset="img/index-can-desktop@1x.webp 1x, img/index-can-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)"
@@ -120,18 +120,18 @@
             <li class="advantages__item">
               <picture class="advantages__image-wrap">
                 <source type="image/webp" srcset="img/advantage-leaf@1x.webp 1x, img/advantage-leaf@2x.webp 2x">
-                <img class="advantages__image" width="50" height="50" alt="Функциональное питание"
+                <img class="advantages__image" width="60" height="60" alt="Функциональное питание"
                       src="img/advantage-leaf@1x.png" srcset="img/advantage-leaf@2x.png 2x">
               </picture>
               <p class="advantages__text">Функциональное питание
                 содержит только полезные
                 питательные вещества.</p>
-              <span class="advantages__number">1</span>
+              <span class="advantages__number advantages__number--one">1</span>
             </li>
             <li class="advantages__item advantages__item--second">
               <picture class="advantages__image-wrap">
                 <source type="image/webp" srcset="img/advantage-powder@1x.webp 1x, img/advantage-powder@2x.webp 2x">
-                <img class="advantages__image" src="img/advantage-powder@1x.png" width="50" height="50"
+                <img class="advantages__image" src="img/advantage-powder@1x.png" width="60" height="60"
                       alt="Выпускается в виде порошка">
               </picture>
               <p class="advantages__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
@@ -140,7 +140,7 @@
             <li class="advantages__item advantages__item--third">
               <picture class="advantages__image-wrap">
                 <source type="image/webp" srcset="img/advantage-dining@1x.webp 1x, img/advantage-dining@2x.webp 2x">
-                <img class="advantages__image" src="img/advantage-dining@1x.png" width="50" height="50"
+                <img class="advantages__image" src="img/advantage-dining@1x.png" width="60" height="60"
                       alt="Замените один-два приема обычной еды">
               </picture>
               <p class="advantages__text">Замените один-два приема обычной еды на наше функциональное питание.</p>
@@ -149,7 +149,7 @@
             <li class="advantages__item advantages__item--four">
               <picture class="advantages__image-wrap">
                 <source type="image/webp" srcset="img/advantage-clock@1x.webp 1x, img/advantage-clock@2x.webp 2x">
-                <img class="advantages__image" src="img/advantage-clock@1x.png" width="50" height="50"
+                <img class="advantages__image" src="img/advantage-clock@1x.png" width="60" height="60"
                       alt="Уже через месяц наслаждайтесь изменениями">
               </picture>
               <p class="advantages__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
@@ -185,16 +185,34 @@
               <div class="example__image-wrap">
                 <div class="example__image-content example__image-content--wide">
                   <picture>
-                    <source media="(min-width: 1200px)" srcset="./img/example-wide.png">
-                    <source media="(min-width: 768px)" srcset="./img/example-wide.png">
-                    <img class="example__image example__image--wide" src="./img/example-wide-mobile.png" alt="Cat Energy">
+                    <source type="image/webp" media="(min-width: 1300px)"
+                            srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)"
+                            srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
+
+                    <source media="(min-width: 1300px)"
+                            srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)"
+                            srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+                    <img class="example__image example__image--wide" width="320" height="240" alt="cat before"
+                         src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x">
                   </picture>
                 </div>
                 <div class="example__image-content example__image-content--thin">
                   <picture>
-                    <source media="(min-width: 1200px)" srcset="./img/example-thin.png">
-                    <source media="(min-width: 768px)" srcset="./img/example-thin.png">
-                    <img class="example__image example__image--thin" src="./img/example-thin.png" alt="Cat Energy">
+                    <source type="image/webp" media="(min-width: 1300px)"
+                            srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)"
+                            srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
+
+                    <source media="(min-width: 1300px)"
+                            srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)"
+                            srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+                    <img class="example__image example__image--thin" width="320" height="240" alt="cat after"
+                         src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x">
                   </picture>
                 </div>
               </div>
@@ -247,21 +265,21 @@
               <li class="social__item">
                 <a href="https://vk.com/htmlacademy" class="social__link social__link--vk" aria-label="vk">
                   <svg class="social__icon social__icon--vk" width="16" height="16">
-                    <use xlink:href="img/sprite.svg#icon-vk"></use>
+                    <use xlink:href="img/sprite.svg#icon-vk" class="social__icon-svg"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
                 <a href="https://www.instagram.com/htmlacademy" class="social__link social__link--instagram" aria-label="instagram">
                   <svg class="social__icon social__icon--instagram" width="16" height="16">
-                    <use xlink:href="img/sprite.svg#icon-insta"></use>
+                    <use xlink:href="img/sprite.svg#icon-insta" class="social__icon-svg"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
                 <a href="https://www.facebook.com/htmlacademy" class="social__link social__link--facebook" aria-label="facebook">
                   <svg class="social__icon social__icon--facebook" width="10" height="19">
-                    <use xlink:href="img/sprite.svg#icon-fb"></use>
+                    <use xlink:href="img/sprite.svg#icon-fb" class="social__icon-svg"></use>
                   </svg>
                 </a>
               </li>

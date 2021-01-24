@@ -28,7 +28,7 @@
     line-height: 36px;
     padding-right: 36px;
     padding-left: 36px;
-    margin-left: 30px;
+    margin-left: 32px;
   }
 
   @media (min-width: $desktop) {
@@ -62,4 +62,12 @@
 
 @mixin color-fill($colorTop, $colorBottom) {
   background: linear-gradient($colorTop 0%, $colorTop 137px, $colorBottom 138px, $colorBottom 100%);
+
+  @media (min-width: $tablet) {
+    background: linear-gradient($colorTop 0%, $colorTop 185px, $colorBottom 186px, $colorBottom 100%);
+  }
+
+  @media (min-width: $desktop) {
+    background: linear-gradient($colorTop 0%, $colorTop 185px, $colorBottom 186px, $colorBottom 100%);
+  }
 }

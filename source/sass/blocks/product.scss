@@ -1,20 +1,21 @@
 .product {
   display: flex;
   flex-wrap: wrap;
+  padding-top: 18px;
 }
 
 .product__content {
   display: flex;
   flex-direction: row;
-  padding-top: 20px;
-  padding-bottom: 12px;
+  padding-top: 2px;
+  padding-bottom: 22px;
   flex-grow: 2;
 
   @media (min-width: $tablet) {
     flex-direction: column;
-    padding-left: 36px;
-    padding-right: 36px;
-    padding-bottom: 40px;
+    padding-left: 38px;
+    padding-right: 38px;
+    padding-bottom: 13px;
   }
 }
 
@@ -38,12 +39,19 @@
 }
 
 .product__image {
-  align-self: center;
+  align-self: flex-start;
   width: 100%;
   height: auto;
 
   @media (min-width: $tablet) {
-    align-self: flex-end;
+    align-self: flex-start;
+    width: 168px;
+    height: 200px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 172px;
+    height: 196px;
   }
 }
 
@@ -70,7 +78,14 @@
     max-width: 140px;
     align-self: center;
     text-align: center;
-    margin-top: 45px;
+    margin-top: 34px;
+    padding-left: 2px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 43px;
+    padding-left: 2px;
+    line-height: 22px;
   }
 }
 
@@ -87,7 +102,11 @@
   @media (min-width: $tablet) {
     font-size: 16px;
     line-height: 16px;
-    margin-top: 23px;
+    margin-top: 21px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 26px;
   }
 }
 
@@ -106,13 +125,19 @@
   width: 100%;
 
   @media (min-width: $tablet) {
-    padding-left: 36px;
-    padding-right: 36px;
+    padding-left: 38px;
+    padding-right: 38px;
   }
 }
 
 .product__button {
+  z-index: 1;
+
   @media (min-width: $tablet) {
+    margin-top: 14px;
+  }
+
+  @media (min-width: $desktop) {
     margin-top: 15px;
   }
 }

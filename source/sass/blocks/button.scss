@@ -2,7 +2,7 @@
   box-sizing: border-box;
   width: 100%;
   background-color: $green;
-  border: 0;
+  border: none;
   color: $white;
   padding: 10px 44px;
   font-size: 16px;
@@ -20,6 +20,17 @@
     line-height: 20px;
   }
 
+  &:hover,
+  &:focus {
+    outline: none;
+    background-color: $green2;
+  }
+
+  &:active {
+    outline: none;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
   &--wide {
     font-size: 14px;
     line-height: 18px;
@@ -31,12 +42,29 @@
     }
   }
 
-  &--catalog {
+  &--grey {
+    background-color: $smokyWhiteLight;
+    color: $darkGrey;
+    font-size: 16px;
+    line-height: 20px;
+
+    &:hover,
+    &:focus {
+      outline: none;
+      background-color: $smokyWhite2;
+    }
+
+    &:active {
+      outline: none;
+      color: rgba(68, 68, 68, 0.3);
+    }
+  }
+
+  &--tight {
     @media (min-width: $tablet) {
-      padding-top: 10px;
-      padding-bottom: 10px;
       font-size: 16px;
       line-height: 20px;
+      padding: 9px;
     }
   }
 }

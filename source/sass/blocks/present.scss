@@ -3,12 +3,14 @@
   margin-bottom: 34px;
 
   @media (min-width: $tablet) {
-    margin-top: 82px;
+    margin-top: 71px;
+    margin-bottom: 75px;
   }
 
   @media (min-width: $desktop) {
-    margin-left: 79px;
+    margin-left: 82px;
     margin-top: 0;
+    margin-bottom: 88px;
   }
 }
 
@@ -17,11 +19,15 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  background-image: url("../img/present-bg.jpg");
-  padding-top: 58px;
+  padding-top: 64px;
   padding-right: 20px;
   padding-bottom: 26px;
   padding-left: 20px;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+
+  @media (min-resolution: $retinaDpi), (min-resolution: $retinaDppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+  }
 
   @media (min-width: $tablet) {
     flex-direction: row;
@@ -29,24 +35,35 @@
     padding-top: 37px;
     padding-right: 124px;
     padding-bottom: 50px;
-    padding-left: 80px;
+    padding-left: 90px;
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+
+    @media (min-resolution: $retinaDpi), (min-resolution: $retinaDppx) {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop) {
     flex-direction: column;
     padding-left: 40px;
     padding-right: 42px;
-    padding-top: 57px;
+    padding-top: 64px;
     padding-bottom: 25px;
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+
+    @media (min-resolution: $retinaDpi), (min-resolution: $retinaDppx) {
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
+    }
   }
 }
 
 .present__icon {
-  width: 78px;
-  height: 80px;
   display: inline-block;
   align-self: center;
-  background-image: url("../img/icon-gift.svg");
+}
+
+.present__icon-svg {
+  fill: $white;
 }
 
 .present__text {
@@ -58,17 +75,17 @@
   align-items: center;
   text-align: center;
   color: $white;
-  margin-top: 49px;
+  margin-top: 62px;
   max-width: 161px;
   align-self: center;
 
   @media (min-width: $tablet) {
     text-align: left;
-    margin-top: 37px;
+    margin-top: 35px;
   }
 
   @media (min-width: $desktop) {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 61px;
   }
 }

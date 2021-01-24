@@ -18,6 +18,7 @@
     top: 95px;
     padding-left: 76px;
     padding-right: 83px;
+    padding-bottom: 58px;
     box-sizing: border-box;
   }
 }
@@ -54,7 +55,9 @@
   }
 
   @media (min-width: $desktop) {
+    position: relative;
     text-align: left;
+    top: -2px;
   }
 }
 

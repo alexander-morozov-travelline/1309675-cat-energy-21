@@ -6,12 +6,17 @@
   }
 
   @media (min-width: $desktop) {
-    margin-top: 62px;
+    margin-top: 80px;
   }
 }
 
 .progress__list {
   @include reset-list;
+  margin-top: 20px;
+
+  @media (min-width: $tablet) {
+    margin-top: 22px;
+  }
 
   @media (min-width: $desktop) {
     display: flex;
@@ -20,13 +25,13 @@
 }
 
 .progress__item {
-  margin-top: 20px;
+
   padding: 21px 20px 18px 20px;
   background-color: $smokyWhiteLight;
   box-sizing: border-box;
 
   @media (min-width: $tablet) {
-    padding-top: 65px;
+    padding-top: 74px;
     padding-right: 42px;
     padding-bottom: 57px;
     padding-left: 51px;
@@ -38,14 +43,14 @@
   }
 
   &:not(:first-child) {
-    margin-top: 20px;
+    margin-top: 18px;
 
     @media (min-width: $tablet) {
       margin-top: 31px;
     }
 
     @media (min-width: $desktop) {
-      margin-top: 20px;
+      margin-top: 0;
     }
   }
 }
@@ -77,8 +82,8 @@
     order: 1;
     width: 200px;
     height: 200px;
-    margin-right: 17px;
-    margin-top: 23px;
+    margin-right: 19px;
+    margin-top: 16px;
   }
 
   @media (min-width: $desktop) {
@@ -91,14 +96,13 @@
 }
 
 .progress__image {
-  width: auto;
-  height: 50px;
   margin-right: 19px;
   margin-left: 2px;
   position: relative;
 
   &--slim {
-    left: 9px;
+    left: 7px;
+    top: -4px;
 
     @media (min-width: $tablet) {
       width: 141px;
@@ -171,11 +175,13 @@
     font-size: 16px;
     line-height: 24px;
     border: none;
-    margin-top: 34px;
+    margin-top: 27px;
+    padding-bottom: 33px;
   }
 
   @media (min-width: $desktop) {
     margin-top: 40px;
+    padding-bottom: 10px;
   }
 
   &--slim {

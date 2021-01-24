@@ -24,6 +24,14 @@
     }
   }
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet) {
     border-top: none;
     font-style: normal;
@@ -49,8 +57,7 @@
         position: absolute;
         content: "";
         bottom: -9px;
-        width: calc(100% - 3px);
-        transform: translateX(2px);
+        width: 100%;
         border-bottom: 2px solid #68b738;
       }
 
@@ -65,6 +72,16 @@
       &::before {
         border-color: $white;
       }
+    }
+  }
+
+  &--catalog {
+    @media (min-width: $tablet) {
+      left: -2px;
+    }
+
+    @media (min-width: $desktop) {
+      left: 2px;
     }
   }
 }

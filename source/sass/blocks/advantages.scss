@@ -22,7 +22,7 @@
     padding-right: 75px;
   }
 
-  @media (min-width: $tablet) {
+  @media (min-width: $desktop) {
     padding-right: 0;
   }
 }
@@ -126,5 +126,16 @@
     font-size: 280px;
     line-height: 280px;
     color: $smokyWhiteLight;
+  }
+
+  &--one {
+    @media (min-width: $tablet) {
+      right: 19px;
+      top: -4px;
+    }
+
+    @media (min-width: $desktop) {
+      right: 2px;
+    }
   }
 }

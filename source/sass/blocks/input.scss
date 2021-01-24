@@ -15,6 +15,15 @@
   @media (min-width: $tablet) {
     font-size: 20px;
     line-height: 30px;
-    padding: 10px 15px 10px 17px;
+    padding: 10px 15px 10px 19px;
+  }
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    outline: none;
+    border: 2px solid #444444;
   }
 }

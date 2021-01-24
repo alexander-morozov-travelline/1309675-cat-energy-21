@@ -143,4 +143,3 @@ exports.watch = watch;
 
 exports.build = gulp.series(clean, gulp.parallel(images, webpi, sprite, copy, js, css, html));
 exports.start = gulp.series(exports.build, watch);
-exports.dev = gulp.series(watch);
