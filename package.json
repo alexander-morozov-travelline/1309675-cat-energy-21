@@ -1,42 +1,42 @@
 {
-  "name": "cat-energy-21",
+  "name": "cat-energy-19",
+  "version": "17.0.0",
   "private": true,
   "description": "Личный проект «Кэт энерджи» от HTML Academy",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
-    "autoprefixer": "10.0.2",
+    "autoprefixer": "9.5.x",
     "browser-sync": "2.26.x",
-    "imagemin": "^7.0.1",
-    "uglify": "^0.1.5",
-    "del": "^6.0.0",
+    "del": "^5.1.0",
     "gulp": "4.0.x",
     "gulp-csso": "^4.0.1",
     "gulp-htmlmin": "^5.0.1",
     "gulp-imagemin": "^7.1.0",
     "gulp-plumber": "1.2.x",
-    "gulp-postcss": "9.0.x",
+    "gulp-postcss": "8.0.x",
     "gulp-rename": "^2.0.0",
-    "gulp-sass": "4.1.x",
-    "gulp-sourcemaps": "3.0.0",
-    "gulp-svgmin": "^3.0.0",
+    "gulp-sass": "4.0.x",
+    "gulp-sourcemaps": "2.6.x",
+    "gulp-svgmin": "^2.2.0",
     "gulp-svgstore": "^7.0.1",
     "gulp-uglify": "^3.0.2",
     "gulp-webp": "^4.0.1",
-    "stylelint": "13.7.2",
+    "stylelint": "10.1.x",
     "stylelint-config-htmlacademy": "0.1.x",
-    "webp-in-css": "^0.5.1"
+    "webp-in-css": "^0.3.0"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
-    "build": "gulp styles",
-    "start": "gulp"
+    "build": "gulp build",
+    "start": "gulp start"
   },
   "browserslist": [
     "last 2 versions",
-    "not dead",
-    "not ie <= 11"
+    "not ie <= 11",
+    "Firefox ESR",
+    "iOS >= 12"
   ],
   "editorconfig-cli": [
     "*.json",
@@ -44,9 +44,9 @@
     "source/*.html",
     "source/js/**/*.js",
     "source/img/**/*.svg",
-    "source/sass/**/*.scss"
+    "source/sass/**/*.{sass,scss}"
   ],
   "engines": {
-    "node": "14.15.0"
+    "node": "8.16"
   }
 }
