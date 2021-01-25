@@ -4,12 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="./css/style.min.css" rel="stylesheet">
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-    <script src="./js/main.min.js" type="text/javascript"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/svgxuse.min.js"></script>
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header page-header--index">
       <div class="container">
         <div class="page-header__content">
           <a href="#" class="page-header__logo">
@@ -30,12 +31,12 @@
               Главная
             </a>
           </li>
-          <li class="site-list__item">
+          <li class="site-list__item site-list__item--catalog">
             <a class="site-list__item-link site-list__item-link--index" href="catalog.html">
               Каталог продукции
             </a>
           </li>
-          <li class="site-list__item">
+          <li class="site-list__item site-list__item--form">
             <a class="site-list__item-link site-list__item-link--index" href="form.html">
               Подбор программы
             </a>
@@ -51,10 +52,18 @@
             <p class="promo__text">Занялся собой? Займись котом!</p>
           </div>
           <div class="promo__footer">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="./img/promo-desktop.png">
-              <source media="(min-width: 768px)" srcset="./img/promo-tablet.png">
-              <img class="promo__image" src="./img/promo-mobile.png" alt="Функциональное питание для котов">
+            <picture class="promo__image-wrap">
+              <source type="image/webp" media="(min-width: 1200px)"
+                      srcset="img/index-can-desktop@1x.webp 1x, img/index-can-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/index-can-tablet@1x.webp 1x, img/index-can-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/index-can-mobile@1x.webp 1x, img/index-can-mobile@2x.webp 2x">
+
+              <source media="(min-width: 1200px)"
+                      srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
+              <img class="promo__image" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x"
+                    width="280" height="271" alt="Функциональное питание для котов">
             </picture>
             <a class="promo__button button button--wide" href="form.html">подобрать программу</a>
           </div>
@@ -85,7 +94,7 @@
             <li class="progress__item">
               <div class="progress__header">
                 <div class="progress__image-wrap">
-                  <svg class="progress__header-image progress__image--weight" width="67" height="28">
+                  <svg class="progress__image progress__image--weight" width="67" height="28">
                     <use xlink:href="img/sprite.svg#icon-cat-pro"></use>
                   </svg>
                 </div>
@@ -109,24 +118,40 @@
           <h2 class="section-title advantages__title ">Как это работает</h2>
           <ul class="advantages__list">
             <li class="advantages__item">
-              <img src="https://via.placeholder.com/150x150" alt="advantages" class="advantages__image">
+              <picture class="advantages__image-wrap">
+                <source type="image/webp" srcset="img/advantage-leaf@1x.webp 1x, img/advantage-leaf@2x.webp 2x">
+                <img class="advantages__image" width="60" height="60" alt="Функциональное питание"
+                      src="img/advantage-leaf@1x.png" srcset="img/advantage-leaf@2x.png 2x">
+              </picture>
               <p class="advantages__text">Функциональное питание
                 содержит только полезные
                 питательные вещества.</p>
-              <span class="advantages__number">1</span>
+              <span class="advantages__number advantages__number--one">1</span>
             </li>
             <li class="advantages__item advantages__item--second">
-              <img src="https://via.placeholder.com/150x150" alt="advantages" class="advantages__image">
+              <picture class="advantages__image-wrap">
+                <source type="image/webp" srcset="img/advantage-powder@1x.webp 1x, img/advantage-powder@2x.webp 2x">
+                <img class="advantages__image" src="img/advantage-powder@1x.png" width="60" height="60"
+                      alt="Выпускается в виде порошка">
+              </picture>
               <p class="advantages__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
               <span class="advantages__number">2</span>
             </li>
             <li class="advantages__item advantages__item--third">
-              <img src="https://via.placeholder.com/150x150" alt="advantages" class="advantages__image">
+              <picture class="advantages__image-wrap">
+                <source type="image/webp" srcset="img/advantage-dining@1x.webp 1x, img/advantage-dining@2x.webp 2x">
+                <img class="advantages__image" src="img/advantage-dining@1x.png" width="60" height="60"
+                      alt="Замените один-два приема обычной еды">
+              </picture>
               <p class="advantages__text">Замените один-два приема обычной еды на наше функциональное питание.</p>
               <span class="advantages__number">3</span>
             </li>
             <li class="advantages__item advantages__item--four">
-              <img src="https://via.placeholder.com/150x150" alt="advantages" class="advantages__image">
+              <picture class="advantages__image-wrap">
+                <source type="image/webp" srcset="img/advantage-clock@1x.webp 1x, img/advantage-clock@2x.webp 2x">
+                <img class="advantages__image" src="img/advantage-clock@1x.png" width="60" height="60"
+                      alt="Уже через месяц наслаждайтесь изменениями">
+              </picture>
               <p class="advantages__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
               <span class="advantages__number">4</span>
             </li>
@@ -137,7 +162,7 @@
         <div class="container">
           <h2 class="section-title example__title">Живой пример</h2>
           <div class="example__wrap">
-            <div class="example__content example__content--left">
+            <div class="example__content example__content--description">
               <p class="example__text">
                 Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
                 изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
@@ -156,20 +181,38 @@
                 <h3 class="example__cost">Затраты на питание: <span class="example__cost-value"> 15 000 РУБ.</span></h3>
               </div>
             </div>
-            <div class="example__content example__content--right">
+            <div class="example__content example__content--illustration">
               <div class="example__image-wrap">
                 <div class="example__image-content example__image-content--wide">
                   <picture>
-                    <source media="(min-width: 1200px)" srcset="./img/example-wide.png">
-                    <source media="(min-width: 768px)" srcset="./img/example-wide.png">
-                    <img class="example__image example__image--wide" src="./img/example-wide-mobile.png" alt="Cat Energy">
+                    <source type="image/webp" media="(min-width: 1300px)"
+                            srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)"
+                            srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
+
+                    <source media="(min-width: 1300px)"
+                            srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)"
+                            srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+                    <img class="example__image example__image--wide" width="320" height="240" alt="cat before"
+                          src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x">
                   </picture>
                 </div>
                 <div class="example__image-content example__image-content--thin">
                   <picture>
-                    <source media="(min-width: 1200px)" srcset="./img/example-thin.png">
-                    <source media="(min-width: 768px)" srcset="./img/example-thin.png">
-                    <img class="example__image example__image--thin" src="./img/example-thin.png" alt="Cat Energy">
+                    <source type="image/webp" media="(min-width: 1300px)"
+                            srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)"
+                            srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
+
+                    <source media="(min-width: 1300px)"
+                            srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)"
+                            srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+                    <img class="example__image example__image--thin" width="320" height="240" alt="cat after"
+                          src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x">
                   </picture>
                 </div>
               </div>
@@ -208,8 +251,8 @@
           <source media="(min-width: 768px)"
                   srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
           <img class="page-footer__map-image" width="320" height="375"
-               src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x"
-               alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+                src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x"
+                alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
         </picture>
       </div>
       <div class="container">
@@ -221,22 +264,22 @@
             <ul class="social__list">
               <li class="social__item">
                 <a href="https://vk.com/htmlacademy" class="social__link social__link--vk" aria-label="vk">
-                  <svg class="social__icon social__icon--vk" width="16" height="16">
-                    <use xlink:href="img/sprite.svg#icon-vk"></use>
+                  <svg class="social__icon social__icon--vk" width="23" height="16">
+                    <use xlink:href="img/sprite.svg#icon-vk" class="social__icon-svg"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
                 <a href="https://www.instagram.com/htmlacademy" class="social__link social__link--instagram" aria-label="instagram">
                   <svg class="social__icon social__icon--instagram" width="16" height="16">
-                    <use xlink:href="img/sprite.svg#icon-insta"></use>
+                    <use xlink:href="img/sprite.svg#icon-insta" class="social__icon-svg"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
                 <a href="https://www.facebook.com/htmlacademy" class="social__link social__link--facebook" aria-label="facebook">
                   <svg class="social__icon social__icon--facebook" width="10" height="19">
-                    <use xlink:href="img/sprite.svg#icon-fb"></use>
+                    <use xlink:href="img/sprite.svg#icon-fb" class="social__icon-svg"></use>
                   </svg>
                 </a>
               </li>
@@ -245,7 +288,7 @@
           <div class="page-footer__copyrite copyrite">
             <a class="copyrite__logo" href="https://htmlacademy.ru/intensive/adaptive">
               <span class="copyrite__text">HTML Academy</span>
-              <img src="img/htmlacademy.svg" class="copyrite__logo-image" width="27" height="34" alt="Cat energy">
+              <img src="img/htmlacademy.svg" class="copyrite__logo-image" width="40" height="40" alt="Cat energy">
             </a>
           </div>
         </div>

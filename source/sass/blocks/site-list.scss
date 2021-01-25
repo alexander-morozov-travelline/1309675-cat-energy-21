@@ -24,6 +24,14 @@
     }
   }
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet) {
     border-top: none;
     font-style: normal;
@@ -33,7 +41,7 @@
     display: inline;
     position: relative;
     padding: 0;
-    margin-left: 30px;
+    margin-left: 35px;
   }
 
   @media (min-width: $desktop) {
@@ -41,18 +49,20 @@
     font-weight: normal;
     font-size: 20px;
     line-height: 30px;
-    margin-left: 32px;
   }
 
   &--active {
-    @media (min-width: $tablet) {
-      &::before {
+    &::before {
+      @media (min-width: $tablet) {
         position: absolute;
         content: "";
         bottom: -9px;
-        width: calc(100% - 4px);
-        transform: translateX(-2px);
+        width: 100%;
         border-bottom: 2px solid #68b738;
+      }
+
+      @media (min-width: $desktop) {
+        bottom: -7px;
       }
     }
   }
@@ -62,6 +72,16 @@
       &::before {
         border-color: $white;
       }
+    }
+  }
+
+  &--catalog {
+    @media (min-width: $tablet) {
+      left: -2px;
+    }
+
+    @media (min-width: $desktop) {
+      left: 2px;
     }
   }
 }

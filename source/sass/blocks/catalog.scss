@@ -15,22 +15,38 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 37px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 33px;
   }
 }
 
 .catalog__item {
   border-top: 1px solid $smokyWhite2;
 
+  @media (max-width: $mobileOnly) {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   @media (min-width: $tablet) {
     box-sizing: border-box;
     border-top: none;
     width: 324px;
-    background: linear-gradient($white 0%, $white 81px, $smokyWhiteLight 82px, $smokyWhiteLight 100%);
-    margin-top: 59px;
+    background: linear-gradient($white 0%, $white 91px, $smokyWhiteLight 92px, $smokyWhiteLight 100%);
+    margin-top: 34px;
+    margin-bottom: 16px;
+    padding-bottom: 40px;
   }
 
   @media (min-width: $desktop) {
     width: 245px;
+    margin-bottom: 12px;
+    background: linear-gradient($white 0%, $white 98px, $smokyWhiteLight 99px, $smokyWhiteLight 100%);
   }
 
   &:last-child {
@@ -39,6 +55,7 @@
 
     @media (min-width: $tablet) {
       border: none;
+      padding-bottom: 0;
     }
   }
 
@@ -50,10 +67,14 @@
 
   &--more {
     background: $white;
-    padding-top: 57px;
-    padding-left: 0;
-    padding-right: 0;
-    border: none;
+    padding-top: 0;
+    margin-top: 24px;
+    position: relative;
+
+    @media (min-width: $tablet) {
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
   }
 }
 
@@ -66,10 +87,15 @@
 
   @media (min-width: $tablet) {
     border: 2px solid $smokyWhiteLight;
-    padding-top: 50px;
+    margin-top: 103px;
+    padding-top: 49px;
     padding-left: 36px;
     padding-right: 36px;
-    padding-bottom: 38px;
+    padding-bottom: 36px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 110px;
   }
 }
 
@@ -152,17 +178,7 @@
 }
 
 .catalog__button-all {
-  background-color: $smokyWhiteLight;
-  border: none;
-  color: $darkGrey;
   padding: 10px;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 16px;
-  line-height: 20px;
-  box-sizing: border-box;
-  width: 100%;
   margin-top: 10px;
 
   @media (min-width: $tablet) {

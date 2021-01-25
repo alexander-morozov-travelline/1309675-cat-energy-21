@@ -6,12 +6,17 @@
   }
 
   @media (min-width: $desktop) {
-    margin-top: 62px;
+    margin-top: 80px;
   }
 }
 
 .progress__list {
   @include reset-list;
+  margin-top: 20px;
+
+  @media (min-width: $tablet) {
+    margin-top: 22px;
+  }
 
   @media (min-width: $desktop) {
     display: flex;
@@ -20,16 +25,16 @@
 }
 
 .progress__item {
-  margin-top: 20px;
+
   padding: 21px 20px 18px 20px;
   background-color: $smokyWhiteLight;
   box-sizing: border-box;
 
   @media (min-width: $tablet) {
-    padding-top: 65px;
+    padding-top: 74px;
     padding-right: 42px;
     padding-bottom: 57px;
-    padding-left: 53px;
+    padding-left: 51px;
   }
 
   @media (min-width: $desktop) {
@@ -38,14 +43,14 @@
   }
 
   &:not(:first-child) {
-    margin-top: 20px;
+    margin-top: 18px;
 
     @media (min-width: $tablet) {
       margin-top: 31px;
     }
 
     @media (min-width: $desktop) {
-      margin-top: 20px;
+      margin-top: 0;
     }
   }
 }
@@ -77,61 +82,60 @@
     order: 1;
     width: 200px;
     height: 200px;
-    margin-right: 17px;
-    margin-top: 23px;
+    margin-right: 19px;
+    margin-top: 16px;
   }
 
   @media (min-width: $desktop) {
     order: 0;
     width: 100px;
     height: 100px;
-    margin-right: 60px;
+    margin-right: 63px;
     margin-top: 10px;
   }
 }
 
 .progress__image {
-  width: auto;
-  height: 50px;
   margin-right: 19px;
   margin-left: 2px;
+  position: relative;
 
   &--slim {
-    margin-left: 9px;
+    left: 7px;
+    top: -4px;
 
     @media (min-width: $tablet) {
       width: 141px;
       height: 194px;
-      margin-top: -9px;
-      margin-left: 27px;
+      top: -9px;
+      left: 27px;
     }
 
     @media (min-width: $desktop) {
       width: 71px;
       height: 97px;
-      margin-top: -5px;
-      margin-left: 13px;
+      top: -5px;
+      left: 13px;
     }
   }
 
   &--weight {
     right: 60px;
-    top: 91px;
-    margin-top: 10px;
-    margin-left: -7px;
+    top: 10px;
+    left: -7px;
 
     @media (min-width: $tablet) {
       width: 268px;
       height: 113px;
-      margin-top: 43px;
-      margin-left: -36px;
+      top: 43px;
+      left: -36px;
     }
 
     @media (min-width: $desktop) {
       width: 134px;
       height: 57px;
-      margin-top: 19px;
-      margin-left: -20px;
+      top: 19px;
+      left: -20px;
     }
   }
 }
@@ -171,11 +175,13 @@
     font-size: 16px;
     line-height: 24px;
     border: none;
-    margin-top: 34px;
+    margin-top: 27px;
+    padding-bottom: 33px;
   }
 
   @media (min-width: $desktop) {
     margin-top: 40px;
+    padding-bottom: 10px;
   }
 
   &--slim {

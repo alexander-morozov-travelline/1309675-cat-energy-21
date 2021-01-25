@@ -59,14 +59,20 @@
 
   @media (min-width: $desktop) {
     flex-grow: 2;
-    padding-right: 42px;
-    margin-top: 21px;
+    padding-right: 40px;
+    margin-top: 17px;
   }
 }
 
-.additional-product__data-name {
+.additional-product__data-value {
   @media (min-width: $tablet) {
-    margin-right: 49px;
+    min-width: 94px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop) {
+    min-width: 43px;
+    text-align: left;
   }
 }
 
@@ -79,6 +85,6 @@
 
   @media (min-width: $desktop) {
     max-width: 244px;
-    margin-top: 7px;
+    margin-top: 4px;
   }
 }

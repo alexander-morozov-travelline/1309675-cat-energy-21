@@ -15,6 +15,7 @@
   font-size: 16px;
   line-height: 18px;
   color: $darkGrey;
+  align-self: center;
 
   @media (min-width: $tablet) {
     align-self: center;
@@ -31,9 +32,34 @@
   @media (min-width: $tablet) {
     width: 163px;
   }
+
+  &:hover,
+  &:focus {
+    .copyrite__text {
+      opacity: 0.8;
+    }
+
+    .copyrite__logo-image-svg {
+      fill: $green;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    .copyrite__logo-image {
+      fill: $green;
+    }
+  }
 }
 
 .copyrite__logo-image {
-  width: 27px;
-  height: 34px;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  right: -6px;
+}
+
+.copyrite__logo-image-svg {
+  fill: #666666;
 }

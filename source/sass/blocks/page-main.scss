@@ -6,6 +6,18 @@
     font-size: 60px;
     line-height: 60px;
     margin-top: 25px;
-    margin-bottom: 55px;
+    margin-bottom: 0;
+  }
+
+  &--form {
+    @media (min-width: $tablet) {
+      margin-bottom: 54px;
+    }
+  }
+
+  &--catalog {
+    @media (min-width: $tablet) {
+      margin-top: 31px;
+    }
   }
 }

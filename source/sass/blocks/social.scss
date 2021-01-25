@@ -2,16 +2,13 @@
   @include reset-list;
   display: flex;
   justify-content: center;
-
-  @media (min-width: $desktop) {
-    margin-left: 21px;
-  }
 }
 
 .social__item {
   display: inline-block;
-  margin-left: 18px;
-  margin-right: 18px;
+  margin-left: 20px;
+  margin-right: 20px;
+  align-self: center;
 
   @media (min-width: $tablet) {
     margin-left: 14px;
@@ -20,10 +17,20 @@
 }
 
 .social__icon {
+  position: relative;
+
   &--vk {
+    left: 4px;
+
     @media (min-width: $tablet) {
       width: 30px;
       height: 16px;
+      left: 0;
+      top: -2px;
+    }
+
+    @media (min-width: $desktop) {
+      top: 0;
     }
   }
 
@@ -32,12 +39,42 @@
       width: 23px;
       height: 23px;
     }
+
+    @media (min-width: $desktop) {
+      top: 2px;
+    }
   }
 
   &--facebook {
     @media (min-width: $tablet) {
       width: 14px;
       height: 28px;
+      top: -3px;
+    }
+
+    @media (min-width: $desktop) {
+      top: 1px;
     }
   }
+}
+
+.social__link {
+  &:hover,
+  &:focus {
+    .social__icon-svg {
+      fill: $green;
+    }
+  }
+
+  &:active {
+    .social__icon-svg {
+      outline: none;
+      fill: $green;
+      opacity: 0.3;
+    }
+  }
+}
+
+.social__icon-svg {
+  fill: #666666;
 }
