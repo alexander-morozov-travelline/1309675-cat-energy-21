@@ -242,6 +242,21 @@
     @media (max-width: $mobileOnly) {
       max-width: 202px;
       padding-right: 0;
+      margin-bottom: 23px;
+    }
+
+    @media (min-width: $tablet) {
+      margin-bottom: 57px;
+    }
+  }
+
+  &--additional {
+    @media (max-width: $mobileOnly) {
+      margin-bottom: 19px;
+    }
+
+    @media (min-width: $tablet) {
+      margin-bottom: 29px;
     }
   }
 }

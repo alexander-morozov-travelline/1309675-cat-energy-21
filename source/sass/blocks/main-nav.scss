@@ -4,14 +4,6 @@
     position: relative;
   }
 
-  @media (min-width: $tablet) {
-    padding-right: 30px;
-  }
-
-  @media (min-width: $desktop) {
-    padding-right: 111px;
-  }
-
   &--close {
     @media (max-width: $mobileOnly) {
       display: none;

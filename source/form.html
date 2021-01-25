@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
     <link href="./css/style.min.css" rel="stylesheet">
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
     <script src="./js/main.js"></script>
@@ -12,8 +13,9 @@
   <body>
     <header class="page-header">
       <div class="container">
+      <div class="page-header__wrap">
         <div class="page-header__content">
-          <a href="#" class="page-header__logo">
+          <a href="index.html" class="page-header__logo">
             <picture>
               <source media="(min-width: 1200px)" srcset="./img/logo-desktop.svg">
               <source media="(min-width: 768px)" srcset="./img/logo-tablet.svg">
@@ -23,26 +25,27 @@
           <button class="page-header__menu page-header__menu--active" type="button"><span class="visually-hidden">Открыть меню</span>
           </button>
         </div>
+        <nav class="main-nav">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--index">
+              <a class="site-list__item-link" href="index.html">
+                Главная
+              </a>
+            </li>
+            <li class="site-list__item site-list__item--catalog">
+              <a class="site-list__item-link" href="catalog.html">
+                Каталог продукции
+              </a>
+            </li>
+            <li class="site-list__item site-list__item--form  site-list__item--active">
+              <a class="site-list__item-link" href="form.html">
+                Подбор программы
+              </a>
+            </li>
+          </ul>
+        </nav>
+        </div>
       </div>
-      <nav class="main-nav">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--index">
-            <a class="site-list__item-link" href="index.html">
-              Главная
-            </a>
-          </li>
-          <li class="site-list__item site-list__item--catalog">
-            <a class="site-list__item-link" href="catalog.html">
-              Каталог продукции
-            </a>
-          </li>
-          <li class="site-list__item site-list__item--form  site-list__item--active">
-            <a class="site-list__item-link" href="form.html">
-              Подбор программы
-            </a>
-          </li>
-        </ul>
-      </nav>
     </header>
     <main class="page-main">
       <form action="https://echo.htmlacademy.ru" class="form">
@@ -68,21 +71,25 @@
               <fieldset class="radio__list">
                 <label class="radio__item label">
                   <input class="radio__item-input" type="radio" name="goal" checked>
-                  <span class="radio__text">Похудение</span>
+                  <span class="radio__text" role="radio" tabindex="0" aria-checked="true">Похудение</span>
                 </label>
                 <label class="radio__item label">
                   <input class="radio__item-input" type="radio" name="goal">
-                  <span class="radio__text">Набор массы</span>
+                  <span class="radio__text" role="radio" tabindex="0" aria-checked="true">Набор массы</span>
                 </label>
                 <label class="radio__item label">
                   <input class="radio__item-input" type="radio" name="goal">
-                  <span class="radio__text">Не знаю (Нужен ваш совет)</span>
+                  <span class="radio__text" role="radio" tabindex="0" aria-checked="true">Не знаю (Нужен ваш совет)</span>
                 </label>
               </fieldset>
             </div>
           </div>
         </div>
-        <h2 class="form__title form__title--contact"><span class="form__title-text form__title-text--contact">Контактные данные (владельца кота)</span></h2>
+        <div class="form__title">
+          <div class="container">
+            <span class="form__title-text form__title-text--contact">Контактные данные (владельца кота)</span>
+          </div>
+        </div>
         <div class="container container--form">
           <div class="form__contact-content">
             <label class="form__label label">
@@ -101,29 +108,37 @@
             </label>
           </div>
         </div>
-        <h2 class="form__title form__title--comment"><span class="form__title-text">Комментарий</span></h2>
+        <div class="form__title form__title--comment">
+          <div class="container">
+            <span class="form__title-text form__title-text--comment">Комментарий</span>
+          </div>
+        </div>
         <div class="container container--form">
           <textarea class="form__textarea textarea" name="habits" cols="30" rows="10">Расскажите обо всех повАдках кота</textarea>
         </div>
-        <h2 class="form__title form__title--additional"><span class="form__title-text">Дополнительно</span></h2>
+        <div class="form__title form__title--additional">
+          <div class="container">
+            <span class="form__title-text form__title-text--additional">Дополнительно</span>
+          </div>
+        </div>
         <div class="container container--form">
           <fieldset class="form__checkbox checkbox">
             <div class="checkbox__list">
               <label class="checkbox__item label">
-                <input class="checkbox__item-input" type="checkbox" name="sweetener" checked>
-                <span class="checkbox__item-text">сахарозаменитель</span>
+                <input class="checkbox__item-input" type="checkbox" name="sweetener" id="sweetener" checked>
+                <span class="checkbox__item-text" role="checkbox" tabindex="0" aria-checked="true">сахарозаменитель</span>
               </label>
               <label class="checkbox__item label">
-                <input class="checkbox__item-input" type="checkbox" name="water">
-                <span class="checkbox__item-text">питьевая вода</span>
+                <input class="checkbox__item-input" type="checkbox" name="water" id="water">
+                <span class="checkbox__item-text" role="checkbox" tabindex="0" aria-checked="true">питьевая вода</span>
               </label>
               <label class="checkbox__item label">
-                <input class="checkbox__item-input" type="checkbox" name="milk">
-                <span class="checkbox__item-text">молоко</span>
+                <input class="checkbox__item-input" type="checkbox" name="milk" id="milk">
+                <span class="checkbox__item-text" role="checkbox" tabindex="0" aria-checked="true">молоко</span>
               </label>
               <label class="checkbox__item label">
                 <input class="checkbox__item-input" type="checkbox" name="vitamins">
-                <span class="checkbox__item-text">витамины</span>
+                <span class="checkbox__item-text" role="checkbox" tabindex="0" aria-checked="true">витамины</span>
               </label>
             </div>
           </fieldset>
@@ -165,7 +180,7 @@
       </div>
       <div class="container">
         <div class="page-footer__wrap">
-          <a href="#" class="page-footer__logo">
+          <a href="index.html" class="page-footer__logo">
             <img src="img/logo-footer.svg" class="page-footer__logo-image" width="128" height="24" alt="Cat energy">
           </a>
           <div class="page-footer__social social">

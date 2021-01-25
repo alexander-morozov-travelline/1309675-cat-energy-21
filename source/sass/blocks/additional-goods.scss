@@ -17,27 +17,6 @@
   }
 }
 
-.additional-goods__title {
-  @include title();
-  @include green-line();
-  margin-top: 24px;
-  margin-bottom: 4px;
-
-  @media (min-width: $tablet) {
-    margin-top: 52px;
-    margin-bottom: 34px;
-  }
-
-  @media (min-width: $desktop) {
-    margin-top: 65px;
-    margin-bottom: 33px;
-  }
-}
-
-.additional-goods__title-text {
-  @include title-text();
-}
-
 .additional-goods__list {
   @include reset-list();
 
