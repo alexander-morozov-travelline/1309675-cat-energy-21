@@ -28,12 +28,20 @@
       left: 0;
       top: -2px;
     }
+
+    @media (min-width: $desktop) {
+      top: 0;
+    }
   }
 
   &--instagram {
     @media (min-width: $tablet) {
       width: 23px;
       height: 23px;
+    }
+
+    @media (min-width: $desktop) {
+      top: 2px;
     }
   }
 
@@ -42,6 +50,10 @@
       width: 14px;
       height: 28px;
       top: -3px;
+    }
+
+    @media (min-width: $desktop) {
+      top: 1px;
     }
   }
 }

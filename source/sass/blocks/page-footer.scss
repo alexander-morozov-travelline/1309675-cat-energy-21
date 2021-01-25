@@ -99,7 +99,11 @@
     padding-bottom: 0;
     align-self: center;
     position: relative;
-    top: -4px
+    top: -4px;
+  }
+
+  @media (min-width: $desktop) {
+    top: -2px;
   }
 }
 

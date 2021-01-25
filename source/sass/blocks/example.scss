@@ -16,7 +16,7 @@
     border: none;
     margin-top: 66px;
     padding-top: 0;
-    padding-bottom: 60px;
+    padding-bottom: 54px;
 
     @include color-fill($white, $smokyWhiteLight);
   }
@@ -51,13 +51,13 @@
 }
 
 .example__content {
-  &--left {
+  &--description {
     @media (min-width: $desktop) {
       max-width: 436px;
     }
   }
 
-  &--right {
+  &--illustration {
     @media (min-width: $tablet) and (max-width: $beforeDesktop) {
       @include color-fill($white, $smokyWhite);
       margin-left: -30px;
@@ -68,10 +68,11 @@
     }
 
     @media (min-width: $desktop) {
-      width: 690px;
+      width: 720px;
       position: absolute;
       right: 0;
       top: -54px;
+      bottom: -54px;
     }
   }
 }
@@ -79,6 +80,10 @@
 .example__image-wrap {
   width: 100%;
   display: flex;
+
+  @media (min-width: $desktop) {
+    height: 100%;
+  }
 }
 
 .example__image-content {
@@ -98,7 +103,8 @@
 
   &--wide {
     @media (min-width: $desktop) {
-      @include color-fill($white, $smokyWhiteLight);
+      @include color-fill-img-content($white, $smokyWhiteLight);
+      padding-left: 32px;
     }
   }
 
@@ -112,15 +118,13 @@
     }
 
     @media (min-width: $desktop) {
-      @include color-fill($white, $smokyWhite);
+      @include color-fill-img-content($white, $smokyWhite);
       padding-right: 103px;
     }
   }
 }
 
 .example__image {
-  width: 100%;
-
   @media (min-width: $tablet) {
     width: 690px;
     height: 517px;
@@ -135,7 +139,7 @@
     }
 
     @media (min-width: $desktop) {
-      right: 21px;
+      right: 20px;
     }
   }
 
@@ -147,7 +151,7 @@
     }
 
     @media (min-width: $desktop) {
-      left: -18px;
+      left: -20px;
     }
   }
 }
@@ -166,6 +170,13 @@
     padding-right: 70px;
     margin-top: 15px;
     padding-bottom: 68px;
+  }
+
+  @media (min-width: $desktop) {
+    position: absolute;
+    bottom: 0;
+    padding-left: 38px;
+    padding-right: 110px;
   }
 }
 
@@ -293,6 +304,7 @@
 
   @media (min-width: $desktop) {
     margin-top: 115px;
+    padding-right: 5px;
   }
 }
 
@@ -339,6 +351,7 @@
 
   @media (min-width: $desktop) {
     margin-top: 69px;
+    justify-content: flex-start;
   }
 }
 

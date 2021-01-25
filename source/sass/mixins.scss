@@ -71,3 +71,9 @@
     background: linear-gradient($colorTop 0%, $colorTop 136px, $colorBottom 137px, $colorBottom 100%);
   }
 }
+
+@mixin color-fill-img-content($colorTop, $colorBottom) {
+  @media (min-width: $desktop) {
+    background: linear-gradient($colorTop 0%, $colorTop 190px, $colorBottom 191px, $colorBottom 100%);
+  }
+}
