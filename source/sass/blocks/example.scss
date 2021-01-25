@@ -71,7 +71,7 @@
       width: 690px;
       position: absolute;
       right: 0;
-      top: 0;
+      top: -54px;
     }
   }
 }
@@ -113,6 +113,7 @@
 
     @media (min-width: $desktop) {
       @include color-fill($white, $smokyWhite);
+      padding-right: 103px;
     }
   }
 }
@@ -132,6 +133,10 @@
       transform: translateX(50%);
       right: -5px;
     }
+
+    @media (min-width: $desktop) {
+      right: 21px;
+    }
   }
 
   &--thin {
@@ -139,6 +144,10 @@
       float: left;
       transform: translateX(-50%);
       left: 7px;
+    }
+
+    @media (min-width: $desktop) {
+      left: -18px;
     }
   }
 }
