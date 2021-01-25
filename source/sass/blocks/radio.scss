@@ -27,6 +27,19 @@
       margin-top: 7px;
     }
   }
+
+  &:hover,
+  &:focus {
+    .radio__text {
+      &::before {
+        border: 1px solid $darkGrey2;
+      }
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .radio__item-input {
@@ -46,7 +59,7 @@
     height: 28px;
     flex-shrink: 0;
     flex-grow: 0;
-    border: 1px solid #adb5bd;
+    border: 1px solid $lightTelegrey;
     border-radius: 50%;
     margin-right: 15px;
 

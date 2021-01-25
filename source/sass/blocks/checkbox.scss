@@ -60,6 +60,17 @@
       height: 40px;
     }
   }
+
+  &:hover,
+  &:focus {
+    &::before {
+      border: 1px solid $darkGrey2;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .checkbox__item-input:checked + .checkbox__item-text::before {

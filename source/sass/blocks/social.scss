@@ -58,6 +58,23 @@
   }
 }
 
+.social__link {
+  &:hover,
+  &:focus {
+    .social__icon-svg {
+      fill: $green;
+    }
+  }
+
+  &:active {
+    .social__icon-svg {
+      outline: none;
+      fill: $green;
+      opacity: 0.3;
+    }
+  }
+}
+
 .social__icon-svg {
   fill: #666666;
 }
