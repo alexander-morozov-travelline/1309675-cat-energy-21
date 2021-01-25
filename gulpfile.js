@@ -158,7 +158,7 @@ const build = gulp.series(
 
 exports.build = build;
 
-exports.start = gulp.series(
+exports.default = gulp.series(
   clean,
   gulp.parallel(
     styles,
